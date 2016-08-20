@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS App_test</title>
+	<link rel="shortcut icon" href="./images/ng-logo.png" type="image/png" />
+	<link rel="stylesheet" href="./css/scope.css">
+</head>
+<body>
+	<div class="show-scope-demo">
+		<div ng-controller="GreetCtrl">
+			<!-- <h1 ng-cloak>Hello, {{name}}!</h1> -->
+			<!-- <h1 >Hello, <span ng-bind="name"></span>!</h1> -->
+		</div>
+		<div ng-controller="ListCtrl">
+			<ol>
+				<li ng-repeat="name in names">
+					<!-- <i ng-cloak>{{name}} from {{department}}</i> -->
+					<!-- <i ng-bind="name from department"></i> -->
+				</li>
+			</ol>
+		</div>
+	</div>
+	<script src="../libs/angular/angular-1.2.30.min.js"></script>
+	<script src="./js/demo_scope.js"></script>
+</body>
+</html>
