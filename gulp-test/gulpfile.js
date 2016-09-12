@@ -4,7 +4,8 @@ var gulp = require('gulp'),
 	uglify= require('gulp-uglify'),
 	gulpif= require('gulp-if');
 
-var env = process.env.NODE_ENV || 'production';
+// var env = process.env.NODE_ENV || 'production';
+var env = process.env.NODE_ENV || 'development';
 	
 gulp.task('jade',function(){
 	return gulp.src('src/template/**/*.jade')
