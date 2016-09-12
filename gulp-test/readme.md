@@ -188,8 +188,8 @@
 
 	gulp.task('js',function(){
 		return gulp.src('src/js/main.js')
-			.pipe(browserify({ debug: env == 'development'}))
-			.pipe(gulpif(env == 'production', uglify()))
+			.pipe(browserify({ debug: env === 'development'}))
+			.pipe(gulpif(env === 'production', uglify()))
 			.pipe(gulp.dest('builds/development/js'));
 	});
 ``` 
@@ -203,7 +203,32 @@
 	$ NODE_ENV=production gulp js
 ``` 
 
-## 27. Get started with gulp Part 3: Uglify & environment variables
+## 27. 手动编辑 gulpfile.js PS:(开启默认的模式)
+```javascript
+	var env = process.env.NODE_ENV || 'production'; 
+``` 
+```javascript
+	var gulp = require('gulp'),
+		jade = require('gulp-jade'),
+		browserify = require('gulp-browserify'),
+		uglify= require('gulp-uglify'),
+		gulpif= require('gulp-if');
+
+	var env = process.env.NODE_ENV || 'production'; 
+		
+	gulp.task('jade',function(){
+		return gulp.src('src/template/**/*.jade')
+			.pipe(jade())
+			.pipe(gulp.dest('builds/development'));
+	});
+
+	gulp.task('js',function(){
+		return gulp.src('src/js/main.js')
+			.pipe(browserify({ debug: env === 'development'}))
+			.pipe(gulpif(env === 'production', uglify()))
+			.pipe(gulp.dest('builds/development/js'));
+	});
+```
 
 
 

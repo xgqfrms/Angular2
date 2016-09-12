@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	uglify= require('gulp-uglify'),
 	gulpif= require('gulp-if');
 
-var env = process.env.NODE_ENV;
+var env = process.env.NODE_ENV || 'production';
 	
 gulp.task('jade',function(){
 	return gulp.src('src/template/**/*.jade')
@@ -13,8 +13,9 @@ gulp.task('jade',function(){
 });
 gulp.task('js',function(){
 	return gulp.src('src/js/main.js')
-		.pipe(browserify({ debug: env == 'development'}))
-		.pipe(gulpif(env == 'production', uglify()))
+		.pipe(browserify({ debug: env === 'development'}))
+		.pipe(gulpif(env === 'production', uglify()))
+		// .pipe(uglify())
 		.pipe(gulp.dest('builds/development/js'));
 });
 /*
