@@ -347,7 +347,7 @@
 	});
 ``` 
 
-## 41. CMD 运行 gulp watch PS:(使用watch 自动监测变化)
+## 41. CMD 运行 gulp watch PS:(使用 watch 自动监测变化)
 ```sh
 	$ gulp watch
 ``` 
@@ -365,6 +365,74 @@
 ``` 
 
 ## 43. CMD 运行 gulp PS:(使用default模式,指定 tasks)
+```sh
+	$ gulp
+``` 
+
+## 44.  CMD 运行 Ctrl + C (退出 watch / default 模式)
+
+***
+***
+## 45. CMD 安装 npm install --save-dev gulp-connect 
+```sh
+	$ npm install --save-dev gulp-connect  
+``` 
+
+## 46. 手动编辑 gulpfile.js  PS:(自动启动Web Server,打开browser,可以配置端口)
+```javascript
+	connect= require('gulp-connect');
+
+	gulp.task('connect',connect.server({
+		root: [outputDir],
+		open: { browser: 'Google Chrome'}
+	}));
+
+	gulp.task('default',['js','sass','jade','watch','connect']);
+```  
+
+## 47. CMD 运行 gulp PS:(使用default模式,指定 tasks)
+```sh
+	$ gulp
+``` 
+
+## 48. 手动编辑 gulpfile.js  PS:(自动刷新 .pipe(connect.reload());)
+```javascript
+	gulp.task('jade',function(){
+		return gulp.src('src/template/**/*.jade')
+			.pipe(jade())
+			.pipe(gulp.dest(outputDir))
+			.pipe(connect.reload());
+			// .pipe(gulp.dest('builds/development'));
+	});
+
+	gulp.task('js',function(){
+		return gulp.src('src/js/main.js')
+			.pipe(browserify({ debug: env === 'development'}))
+			.pipe(gulpif(env === 'production', uglify()))
+			.pipe(uglify())
+			.pipe(gulp.dest(outputDir + '/js'))
+			.pipe(connect.reload());
+			// .pipe(gulp.dest('builds/development/js'));
+	});
+
+	gulp.task('sass',function(){
+		var config = {};
+		if (env === 'development') {
+			config.sourceComments = 'map';
+		} 
+		if(env === 'production'){
+			config.outputStyle = 'compressed';
+		}
+		return gulp.src('src/sass/main.scss')
+			// .pipe(sass({ sourceComments: 'map'}))
+			.pipe(sass(config))
+			.pipe(gulp.dest(outputDir + '/css'))
+			.pipe(connect.reload());
+			// .pipe(gulp.dest('builds/development/css'));
+	});
+```  
+
+## 49. CMD 运行 gulp 
 ```sh
 	$ gulp
 ``` 

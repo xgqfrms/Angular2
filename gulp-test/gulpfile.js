@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	browserify = require('gulp-browserify'),
 	uglify= require('gulp-uglify'),
 	gulpif= require('gulp-if'),
-	sass= require('gulp-sass');
+	sass= require('gulp-sass'),
+	connect= require('gulp-connect');
 
 var env = process.env.NODE_ENV || 'production';
 // var env = process.env.NODE_ENV || 'development';
@@ -13,7 +14,8 @@ var outputDir = 'builds/development';
 gulp.task('jade',function(){
 	return gulp.src('src/template/**/*.jade')
 		.pipe(jade())
-		.pipe(gulp.dest(outputDir));
+		.pipe(gulp.dest(outputDir))
+		.pipe(connect.reload());
 		// .pipe(gulp.dest('builds/development'));
 });
 
@@ -22,7 +24,8 @@ gulp.task('js',function(){
 		.pipe(browserify({ debug: env === 'development'}))
 		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(uglify())
-		.pipe(gulp.dest(outputDir + '/js'));
+		.pipe(gulp.dest(outputDir + '/js'))
+		.pipe(connect.reload());
 		// .pipe(gulp.dest('builds/development/js'));
 });
 
@@ -46,9 +49,15 @@ gulp.task('sass',function(){
 	return gulp.src('src/sass/main.scss')
 		// .pipe(sass({ sourceComments: 'map'}))
 		.pipe(sass(config))
-		.pipe(gulp.dest(outputDir + '/css'));
+		.pipe(gulp.dest(outputDir + '/css'))
+		.pipe(connect.reload());
 		// .pipe(gulp.dest('builds/development/css'));
 });
+
+gulp.task('connect',connect.server({
+	root: [outputDir],
+	open: { browser: 'Google Chrome'}
+}));
 
 gulp.task('watch',function(){
 	gulp.watch('src/template/**/*.jade',['jade']);
@@ -56,7 +65,7 @@ gulp.task('watch',function(){
 	gulp.watch('src/sass/**/*.scss',['sass']);
 });
 
-gulp.task('default',['js','sass','jade','watch']);
+gulp.task('default',['js','sass','jade','watch','connect']);
 // gulp
 /*
 var gulp = require('gulp'),
