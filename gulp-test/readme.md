@@ -203,7 +203,7 @@
 	$ NODE_ENV=production gulp js
 ``` 
 
-## 27. 手动编辑 gulpfile.js PS:(手动：开启默认的模式)
+## 28. 手动编辑 gulpfile.js PS:(手动：开启默认的模式)
 ```javascript
 	// var env = process.env.NODE_ENV || 'production';
 	var env = process.env.NODE_ENV || 'development';
@@ -230,6 +230,84 @@
 			.pipe(gulp.dest('builds/development/js'));
 	});
 ```
+*** 
+*** 
+## 29. CMD 安装 npm install --save-dev gulp-sass 
+```sh
+	$ npm install --save-dev gulp-sass  
+``` 
+## 30. 手动编辑 gulpfile.js 
+```javascript
+	sass= require('gulp-sass');
+
+	gulp.task('sass',function(){
+		return gulp.src('src/sass/main.scss')
+			.pipe(sass({ sourceComments: 'map'}))
+			.pipe(gulp.dest('builds/development/css'));
+	});
+``` 
+
+## 31. 手动创建 & 编辑 src/sass/main.scss
+```sass
+	body {
+		color: $red;
+	}
+```  
+
+## 33. 手动创建 & 编辑 src/sass/variables.scss
+```sass
+	$red: #ff0000;
+	// rgba();
+``` 
+
+## 31. 手动编辑 src/sass/main.scss
+```sass
+	@import "variables";
+
+	body {
+		color: $red;
+	}
+```  
+
+## 34. CMD 运行 gulp sass 
+```sh
+	$ gulp sass
+```   
+
+## 35. 手动编辑 index.jade 
+```jade
+	doctype html
+	html
+		head
+			title hello jade & gulp
+			link(rel="stylesheet" href="./css/main.css")
+		body
+			h1 we used jade to generate this
+			p it seems like it works! :)
+			mark just check the change of jade!
+			script(src="./js/main.js")
+``` 
+
+## 36. CMD 运行 gulp jade 
+```sh
+	$ gulp jade
+``` 
+
+## 37. 手动编辑 gulpfile.js 
+```javascript
+	sass= require('gulp-sass');
+
+	gulp.task('sass',function(){
+		return gulp.src('src/sass/main.scss')
+			.pipe(sass({ sourceComments: 'map'}))
+			.pipe(gulp.dest('builds/development/css'));
+	});
+``` 
+
+
+
+
+
 
 
 
