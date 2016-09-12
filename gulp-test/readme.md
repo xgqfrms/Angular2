@@ -338,15 +338,36 @@
 
 ***
 ***
+## 40. 手动编辑 gulpfile.js 
+```javascript
+	gulp.task('watch',function(){
+		gulp.watch('src/template/**/*.jade',['jade']);
+		gulp.watch('src/js/**/*.js',['js']);
+		gulp.watch('src/sass/**/*.scss',['sass']);
+	});
+``` 
 
+## 41. CMD 运行 gulp watch PS:(使用watch 自动监测变化)
+```sh
+	$ gulp watch
+``` 
 
+## 42. 手动编辑 gulpfile.js 
+```javascript
+	gulp.task('default',['js','sass','jade','watch']);
+	/*
+		function(){
+			gulp.watch('src/template/**/*.jade',['jade']);
+		}
+		=== ???
+		['jade']
+	*/
+``` 
 
-
-
-
-
-
-
+## 43. CMD 运行 gulp PS:(使用default模式,指定 tasks)
+```sh
+	$ gulp
+``` 
 
 
 
