@@ -193,6 +193,7 @@
 			.pipe(gulp.dest('builds/development/js'));
 	});
 ``` 
+
 ## 26. CMD 运行 NODE_ENV=development gulp js PS:(使用开发调试模式)
 ```sh
 	$ NODE_ENV=development gulp js
@@ -208,6 +209,7 @@
 	// var env = process.env.NODE_ENV || 'production';
 	var env = process.env.NODE_ENV || 'development';
 ``` 
+
 ```javascript
 	var gulp = require('gulp'),
 		jade = require('gulp-jade'),
@@ -230,12 +232,14 @@
 			.pipe(gulp.dest('builds/development/js'));
 	});
 ```
-*** 
-*** 
+
+***
+***
 ## 29. CMD 安装 npm install --save-dev gulp-sass 
 ```sh
 	$ npm install --save-dev gulp-sass  
 ``` 
+
 ## 30. 手动编辑 gulpfile.js 
 ```javascript
 	sass= require('gulp-sass');
@@ -295,19 +299,45 @@
 
 ## 37. 手动编辑 gulpfile.js 
 ```javascript
-	sass= require('gulp-sass');
+	var outputDir = 'builds/development';
+	//path 变量
+	.pipe(gulp.dest(outputDir));
+	// .pipe(gulp.dest('builds/development'));
+	.pipe(gulp.dest(outputDir + '/js'));
+	// .pipe(gulp.dest('builds/development/js'));
+	.pipe(gulp.dest(outputDir + '/css'));
+    // .pipe(gulp.dest('builds/development/css'));
+``` 
 
+```javascript
 	gulp.task('sass',function(){
+		var config = {};
+		if (env === 'development') {
+			config.sourceComments = 'map';
+		} 
+		if(env === 'production'){
+			config.outputStyle = 'compressed';
+		}
 		return gulp.src('src/sass/main.scss')
-			.pipe(sass({ sourceComments: 'map'}))
-			.pipe(gulp.dest('builds/development/css'));
+			// .pipe(sass({ sourceComments: 'map'}))
+			.pipe(sass(config))
+			.pipe(gulp.dest(outputDir + '/css'));
+			// .pipe(gulp.dest('builds/development/css'));
 	});
 ``` 
 
+## 38. CMD 运行 NODE_ENV=development gulp sass PS:(使用开发调试模式)
+```sh
+	$ NODE_ENV=development gulp sass
+``` 
 
+## 39. CMD 运行 NODE_ENV=production gulp sass PS:(使用产品发布模式)
+```sh
+	$ NODE_ENV=production gulp sass
+``` 
 
-
-
+***
+***
 
 
 

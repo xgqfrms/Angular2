@@ -27,8 +27,25 @@ gulp.task('js',function(){
 });
 
 gulp.task('sass',function(){
+	var config = {};
+	if (env === 'development') {
+		config.sourceComments = 'map';
+	} 
+	if(env === 'production'){
+		config.outputStyle = 'compressed';
+	}
+	/*
+		if (env === 'development') {
+			config.sourceComments = 'map';
+		} else if(env === 'production'){
+			config.outputStyle = 'compressed';
+		}else{
+			config.sourceComments = 'map'; 
+		}
+	*/
 	return gulp.src('src/sass/main.scss')
-		.pipe(sass({ sourceComments: 'map'}))
+		// .pipe(sass({ sourceComments: 'map'}))
+		.pipe(sass(config))
 		.pipe(gulp.dest(outputDir + '/css'));
 		// .pipe(gulp.dest('builds/development/css'));
 });
