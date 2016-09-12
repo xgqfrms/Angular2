@@ -437,6 +437,30 @@
 	$ gulp
 ``` 
 
+## 50. some errors
+[here some errors, what's wrong with this? #202](https://github.com/AveVlad/gulp-connect/issues/202)
+[Get started with gulp Part 6: LiveReload and web server](https://www.youtube.com/watch?v=KURMrW-HsY4&index=7&list=PLRk95HPmOM6PN-G1xyKj9q6ap_dc9Yckm)
+[/images/errors/](https://github.com/xgqfrms/AngularJS/tree/gh-pages/images/errors)
+[gulp-test](https://github.com/xgqfrms/AngularJS/tree/gh-pages/gulp-test)
+```javascript
+	/*
+	gulp.task('connect',connect.server({
+		root: [outputDir],
+		open: { browser: 'Google Chrome'}
+	}));
+	*/
+	//https://github.com/AveVlad/gulp-connect
+
+	gulp.task('connect',function(){
+		connect.server({
+			root: [outputDir],
+			port: 8080,
+		    livereload: true,
+			// open: { browser: 'Google Chrome'}
+		});
+	});
+``` 
+
 
 
 

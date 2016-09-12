@@ -65,7 +65,7 @@ gulp.task('connect',connect.server({
 gulp.task('connect',function(){
 	connect.server({
 		root: [outputDir],
-		port: 8000,
+		port: 8080,
 	    livereload: true,
 		// open: { browser: 'Google Chrome'}
 	});
