@@ -203,9 +203,10 @@
 	$ NODE_ENV=production gulp js
 ``` 
 
-## 27. 手动编辑 gulpfile.js PS:(开启默认的模式)
+## 27. 手动编辑 gulpfile.js PS:(手动：开启默认的模式)
 ```javascript
-	var env = process.env.NODE_ENV || 'production'; 
+	// var env = process.env.NODE_ENV || 'production';
+	var env = process.env.NODE_ENV || 'development';
 ``` 
 ```javascript
 	var gulp = require('gulp'),
