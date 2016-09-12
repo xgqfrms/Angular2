@@ -54,10 +54,22 @@ gulp.task('sass',function(){
 		// .pipe(gulp.dest('builds/development/css'));
 });
 
+/*
 gulp.task('connect',connect.server({
 	root: [outputDir],
 	open: { browser: 'Google Chrome'}
 }));
+*/
+//https://github.com/AveVlad/gulp-connect
+
+gulp.task('connect',function(){
+	connect.server({
+		root: [outputDir],
+		port: 8000,
+	    livereload: true,
+		// open: { browser: 'Google Chrome'}
+	});
+});
 
 gulp.task('watch',function(){
 	gulp.watch('src/template/**/*.jade',['jade']);
