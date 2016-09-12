@@ -1,5 +1,7 @@
 # gulp 使用教程 jade
 
+*** 
+*** 
 ## 1. 手动创建 src/templates/index.jade  
 
 ## 2. 手动编辑 index.jade
@@ -21,9 +23,15 @@
 	}
 ``` 
 
-## 4. CMD 安装 npm install --save-dev gulp
+## 4. CMD 安装 npm install --save-dev gulp 
+```sh
+	$ pm install --save-dev gulp
+``` 
 
-## 5. CMD 安装 npm install --save-dev gulp-jade
+## 5. CMD 安装 npm install --save-dev gulp-jade 
+```sh
+	$ npm install --save-dev gulp-jade 
+``` 
 
 ## 6. 手动创建 gulpfile.js
 
@@ -39,14 +47,17 @@
 	});
 ``` 
 
-## 8. CMD 运行 gulp jade
+## 8. CMD 运行 gulp jade 
+```sh
+	$ gulp jade 
+``` 
 
 ## 9. 手动浏览器查看builds/development/index.html
 
 ## 10. 手动编辑index.jade后，查看浏览器的变化 ? **(??? 没有变化， watching ???)** 
 
 *** 
-
+*** 
 ## 11. 手动创建 src/js/logger.js
 ```javascript
 	module.exports = {
@@ -64,6 +75,9 @@
 ``` 
 
 ## 14. CMD 安装 npm install --save-dev gulp-browserify 
+```sh
+	$ npm install --save-dev gulp-browserify 
+``` 
 
 ## 15. 手动编辑 gulpfile.js 
 ```javascript
@@ -85,6 +99,9 @@
 ``` 
 
 ## 16. CMD 运行 gulp js 
+```sh
+	$ gulp js 
+``` 
 
 ## 17. 手动编辑 index.jade 
 ```jade
@@ -100,6 +117,9 @@
 ``` 
 
 ## 18. CMD 运行 gulp jade 
+```sh
+	$ gulp jade 
+``` 
 
 ## 19. 手动浏览器查看builds/development/index.html
 ```sh
@@ -109,6 +129,98 @@
 	Ctrl + Shift + P 
 	[Open in Browser -Productive Server]
 ```
+
+*** 
+*** 
+## 20. CMD 安装 npm install --save-dev gulp-uglify 
+```sh
+	$ npm install --save-dev gulp-uglify
+``` 
+
+## 21.  手动编辑 gulpfile.js 
+```javascript
+	var gulp = require('gulp'),
+		jade = require('gulp-jade'),
+		browserify = require('gulp-browserify'),
+		uglify= require('gulp-uglify');
+		
+	gulp.task('jade',function(){
+		return gulp.src('src/template/**/*.jade')
+			.pipe(jade())
+			.pipe(gulp.dest('builds/development'));
+	});
+
+	gulp.task('js',function(){
+		return gulp.src('src/js/main.js')
+			.pipe(browserify({ debug: true}))
+			.pipe(uglify())
+			.pipe(gulp.dest('builds/development/js'));
+	});
+``` 
+
+## 22. CMD 运行 gulp js 
+```sh
+	$ gulp js
+``` 
+
+## 23. 手动查看builds/development/js/main.js  PS:(13 lines -> 1 line) 
+
+## 24. CMD 安装 npm install --save-dev gulp-if 
+```sh
+	$ npm install --save-dev gulp-if 
+``` 
+
+## 25.  手动编辑 gulpfile.js 
+```javascript
+	var gulp = require('gulp'),
+		jade = require('gulp-jade'),
+		browserify = require('gulp-browserify'),
+		uglify= require('gulp-uglify'),
+		gulpif= require('gulp-if');
+
+	var env = process.env.NODE_ENV;
+		
+	gulp.task('jade',function(){
+		return gulp.src('src/template/**/*.jade')
+			.pipe(jade())
+			.pipe(gulp.dest('builds/development'));
+	});
+
+	gulp.task('js',function(){
+		return gulp.src('src/js/main.js')
+			.pipe(browserify({ debug: env == 'development'}))
+			.pipe(gulpif(env == 'production', uglify()))
+			.pipe(gulp.dest('builds/development/js'));
+	});
+``` 
+## 26. CMD 运行 NODE_ENV=development gulp js PS:(使用开发调试模式)
+```sh
+	$ NODE_ENV=development gulp js
+``` 
+
+## 27. CMD 运行 NODE_ENV=production gulp js PS:(使用产品发布模式)
+```sh
+	$ NODE_ENV=production gulp js
+``` 
+
+## 27. Get started with gulp Part 3: Uglify & environment variables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
