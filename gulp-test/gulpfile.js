@@ -5,8 +5,17 @@ var gulp = require('gulp'),
 	gulpif= require('gulp-if'),
 	sass= require('gulp-sass'),
 	connect= require('gulp-connect');
+/*
+CMD: 手动 传入参数 
+set NODE_ENV=development
+set NODE_ENV=production
 
-var env = process.env.NODE_ENV || 'production';
+https://www.youtube.com/watch?v=gRzCAyNrPV8
+type  in cmd "set NODE_ENV=development(or production)"﻿
+*/
+
+var env = process.env.NODE_ENV;
+// var env = process.env.NODE_ENV || 'production';
 // var env = process.env.NODE_ENV || 'development';
 
 var outputDir = 'builds/development';
@@ -23,7 +32,7 @@ gulp.task('js',function(){
 	return gulp.src('src/js/main.js')
 		.pipe(browserify({ debug: env === 'development'}))
 		.pipe(gulpif(env === 'production', uglify()))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(gulp.dest(outputDir + '/js'))
 		.pipe(connect.reload());
 		// .pipe(gulp.dest('builds/development/js'));

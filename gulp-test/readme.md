@@ -463,10 +463,32 @@
 
 
 
+## bugs fixed ?
 
+### 手动编辑 gulpfile.js 
 
+'''javascript
+	var env = process.env.NODE_ENV;
+'''
 
+>
+CMD: 手动 传入参数 
+set NODE_ENV=development
+set NODE_ENV=production
 
+'''bash
+	$ set NODE_ENV=development
+	$ gulp
+'''
+'''bash
+	$ set NODE_ENV=production
+	$ gulp
+'''
+
+???
+### why it doesn't work by using 
+// var env = process.env.NODE_ENV || 'production';
+// var env = process.env.NODE_ENV || 'development';
 
 
 
