@@ -194,14 +194,19 @@
 	});
 ``` 
 
-## 26. CMD 运行 NODE_ENV=development gulp js PS:(使用开发调试模式)
+## 26. CMD 运行 set NODE_ENV=development 与 gulp js PS:(使用开发调试模式)
+### demo:
+![]()
 ```sh
-	$ NODE_ENV=development gulp js
+	$ set NODE_ENV=development 
+	$ gulp js
 ``` 
 
 ## 27. CMD 运行 NODE_ENV=production gulp js PS:(使用产品发布模式)
+![]()
 ```sh
-	$ NODE_ENV=production gulp js
+	$ set NODE_ENV=production 
+	$ gulp js
 ``` 
 
 ## 28. 手动编辑 gulpfile.js PS:(手动：开启默认的模式)
