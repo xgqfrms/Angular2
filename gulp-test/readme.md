@@ -35,6 +35,21 @@
 	$ npm install --save-dev gulp-jade 
 ``` 
 
+## all in one 等于同 ===
+
+
+```sh
+	$ npm install --save-dev gulp gulp-jade 
+``` 
+等于同 ===
+```sh
+	$ npm install --save-dev gulp
+``` 
+```sh
+	$ npm install --save-dev gulp-jade 
+``` 
+
+
 ## 6. 手动创建 gulpfile.js
 
 ## 7. 手动编辑 gulpfile.js
