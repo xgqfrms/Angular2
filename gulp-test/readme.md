@@ -24,8 +24,10 @@
 ``` 
 
 ## 4. CMD 安装 npm install --save-dev gulp 
+**--save** 命令用于将依赖包添加到package.json的**“dependencies”**中.
+**--save-dev** 命令用于将依赖包添加到package.json的**“devDependencies”**中.
 ```sh
-	$ pm install --save-dev gulp
+	$ npm install --save-dev gulp
 ``` 
 
 ## 5. CMD 安装 npm install --save-dev gulp-jade 
@@ -75,6 +77,7 @@
 ``` 
 
 ## 14. CMD 安装 npm install --save-dev gulp-browserify 
+
 ```sh
 	$ npm install --save-dev gulp-browserify 
 ``` 
