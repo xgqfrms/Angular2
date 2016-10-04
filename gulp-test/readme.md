@@ -151,8 +151,31 @@
 *** 
 *** 
 ## 20. CMD 安装 npm install --save-dev gulp-uglify 
+## new: CMD 安装 npm install --save-dev requirejs
 ```sh
 	$ npm install --save-dev gulp-uglify
+	$ npm install --save-dev requirejs
+``` 
+### [how-to-include-a-javascript-file-in-another-javascript-file](http://stackoverflow.com/questions/950087/how-to-include-a-javascript-file-in-another-javascript-file/39854041#39854041)
+
+### [REQUIREJS IN NODE](http://requirejs.org/docs/node.html#3)  
+sub.js (module.exports)
+```js
+module.exports = {
+  log: function(string) {
+    if(console) console.log(string);
+  }
+  mylog: function(){
+    console.log('just for log test!');
+  }
+}
+``` 
+main.js (Usage)
+```sh
+var mylog =require('./sub');
+
+mylog.log('Hurray, it works! :)');
+mylog.mylog();
 ``` 
 
 ## 21.  手动编辑 gulpfile.js 
@@ -263,7 +286,7 @@
 	sass= require('gulp-sass');
 
 	gulp.task('sass',function(){
-		return gulp.src('src/sass/main.scss')
+		return gulp.src('src/sass/*.scss')
 			.pipe(sass({ sourceComments: 'map'}))
 			.pipe(gulp.dest('builds/development/css'));
 	});
@@ -276,13 +299,13 @@
 	}
 ```  
 
-## 33. 手动创建 & 编辑 src/sass/variables.scss
+## 32. 手动创建 & 编辑 src/sass/variables.scss
 ```sass
 	$red: #ff0000;
 	// rgba();
 ``` 
 
-## 31. 手动编辑 src/sass/main.scss
+## 33. 手动编辑 src/sass/main.scss
 ```sass
 	@import "variables";
 
