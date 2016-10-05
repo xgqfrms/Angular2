@@ -64,7 +64,7 @@ $ npm install --save gulp
 $ npm install --save lite-server
 
 
-```js
+```json
 //package.json
 // json注释error
 
@@ -73,6 +73,52 @@ $ npm install --save lite-server
   },
 ``` 
 $ npm run lite
+
+npm install --save-dev typescript typings
+
+### tsconfig.json
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  }
+}
+``` 
+
+### typings.json
+```json
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160725163759",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "node": "registry:dt/node#6.0.0+20160818175514"
+  }
+}
+``` 
+
+npm install --save-dev concurrently
+
+### package.json
+```json
+"scripts": {
+  "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
+  "lite": "lite-server",
+  "tsc": "tsc",
+  "tsc:w": "tsc -w",
+  "typings": "typings",
+  "postinstall": "typings install"
+},
+``` 
+
+
+
 
 
 ### Bootswatch
@@ -90,9 +136,21 @@ index.html
 (gulp dist/index.html)
 
 
+
+
+
+
+
+
 # go on
 
 https://school.scotch.io/getting-started-with-angular-2/setup?autoplay=true&fullscreen=true
 
+https://school.scotch.io/getting-started-with-angular-2/typescript-setup?autoplay=true&fullscreen=true
+
 
 http://www.imooc.com/video/11055
+
+http://www.imooc.com/u/1947949/courses?sort=publish
+
+CSS3扁平化博客
