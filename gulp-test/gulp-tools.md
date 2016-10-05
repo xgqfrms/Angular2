@@ -37,6 +37,7 @@ gulp-webserver2
 [https://www.browsersync.io/](https://www.browsersync.io/) 
 [https://www.browsersync.io/docs](https://www.browsersync.io/docs) 
 [https://github.com/Browsersync/browser-sync](https://github.com/Browsersync/browser-sync)
+[https://www.browsersync.io/docs/gulp](https://www.browsersync.io/docs/gulp) 
 
 Time-saving synchronised browser testing.
 Your indispensable test assistant.
