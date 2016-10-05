@@ -84,3 +84,15 @@ link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min
 https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css
 
 
+index.html 
+(gulp src/template/index.jade)
+(gulp builds/develoment/index.html)
+(gulp dist/index.html)
+
+
+# go on
+
+https://school.scotch.io/getting-started-with-angular-2/setup?autoplay=true&fullscreen=true
+
+
+http://www.imooc.com/video/11055
