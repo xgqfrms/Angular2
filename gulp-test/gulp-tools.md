@@ -33,6 +33,23 @@ gulp-webserver2
 
 ...
 ``` 
+#  实时渲染(局部)
+[https://www.browsersync.io/](https://www.browsersync.io/) 
+[https://www.browsersync.io/docs](https://www.browsersync.io/docs) 
+[https://github.com/Browsersync/browser-sync](https://github.com/Browsersync/browser-sync)
+
+Time-saving synchronised browser testing.
+Your indispensable test assistant.
+
+Integrates with your current build tools like Gulp & Grunt
+## Browsersync 
+
+> Global Install && Local Install
+
+```sh
+$ npm install -g browser-sync
+$ npm install browser-sync --save-dev
+``` 
 
 
 
