@@ -1,0 +1,32 @@
+{
+  "name": "angular-2-app",
+  "version": "1.0.1",
+  "description": "Angular 2 App, xgqfrms, 2016, webgeeker,github",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/AngularJS.git"
+  },
+  "keywords": [
+    "Angular",
+    "2",
+    "App",
+    "xgqfrms",
+    "webgeeker",
+    "2016",
+    "gulp"
+  ],
+  "author": "xgqfrms,webggeker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/AngularJS/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/AngularJS#readme",
+  "dependencies": {
+    "angular-cli": "^0.1.0",
+    "gulp": "^3.9.1"
+  }
+}
