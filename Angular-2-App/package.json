@@ -4,7 +4,7 @@
   "description": "Angular 2 App, xgqfrms, 2016, webgeeker,github",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lite": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/xgqfrms/AngularJS#readme",
   "dependencies": {
     "angular-cli": "^0.1.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "lite-server": "^2.2.2"
   }
 }
