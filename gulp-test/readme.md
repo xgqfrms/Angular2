@@ -151,10 +151,10 @@
 *** 
 *** 
 ## 20. CMD 安装 npm install --save-dev gulp-uglify 
-## new: CMD 安装 npm install --save-dev requirejs
+## new: CMD 安装 npm install --save-dev requirejs  **???????? error?????**
 ```sh
 	$ npm install --save-dev gulp-uglify
-	$ npm install --save-dev requirejs
+	$ npm install --save-dev requirejs  
 ``` 
 ### [how-to-include-a-javascript-file-in-another-javascript-file](http://stackoverflow.com/questions/950087/how-to-include-a-javascript-file-in-another-javascript-file/39854041#39854041)
 
@@ -479,10 +479,10 @@ mylog.mylog();
 ``` 
 
 ## 50. some errors
-[here some errors, what's wrong with this? #202](https://github.com/AveVlad/gulp-connect/issues/202)
-[Get started with gulp Part 6: LiveReload and web server](https://www.youtube.com/watch?v=KURMrW-HsY4&index=7&list=PLRk95HPmOM6PN-G1xyKj9q6ap_dc9Yckm)
-[/images/errors/](https://github.com/xgqfrms/AngularJS/tree/gh-pages/images/errors)
-[gulp-test](https://github.com/xgqfrms/AngularJS/tree/gh-pages/gulp-test)
+[here some errors, what's wrong with this? #202](https://github.com/AveVlad/gulp-connect/issues/202)  
+[Get started with gulp Part 6: LiveReload and web server](https://www.youtube.com/watch?v=KURMrW-HsY4&index=7&list=PLRk95HPmOM6PN-G1xyKj9q6ap_dc9Yckm)  
+[/images/errors/](https://github.com/xgqfrms/AngularJS/tree/gh-pages/images/errors)  
+[gulp-test](https://github.com/xgqfrms/AngularJS/tree/gh-pages/gulp-test)  
 ```javascript
 	/*
 	gulp.task('connect',connect.server({
@@ -547,14 +547,18 @@ set NODE_ENV=production
 
 ## Using gulp with browserify without the plugin
 
-### npm install --save-dev gulp browserify vinyl-source-stream
+### gulp browserify vinyl-source-stream
 ```sh
-	npm install --save-dev gulp browserify vinyl-source-stream
-	===
-	npm install --save-dev gulp 
-	npm install --save-dev browserify
-	npm install --save-dev vinyl-source-stream
+$ npm install --save-dev gulp browserify vinyl-source-stream
 ``` 
+等于===
+```sh
+npm install --save-dev gulp 
+npm install --save-dev browserify
+npm install --save-dev vinyl-source-stream
+``` 
+
+
 ### npm install --save-dev gulp-uglify
 
 ### npm install --save-dev gulp-streamify
