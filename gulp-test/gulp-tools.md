@@ -51,7 +51,14 @@ Integrates with your current build tools like Gulp & Grunt
 $ npm install -g browser-sync
 $ npm install browser-sync --save-dev
 ``` 
+### Start Browsersync
 
+> Static sites && Dynamic sites
+
+```sh
+$ browser-sync start --server --files "css/*.css"
+$ browser-sync start --proxy "myproject.dev" --files "css/*.css"
+``` 
 
 
 # lifestyle css/sass/less  实时双向渲染
