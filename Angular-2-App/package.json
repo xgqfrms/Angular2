@@ -29,5 +29,8 @@
     "angular-cli": "^0.1.0",
     "gulp": "^3.9.1",
     "lite-server": "^2.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0"
   }
 }
