@@ -58,6 +58,8 @@ dist
 ## app start
 
 $ npm init
+npm install -g angular-cli
+
 $ npm install --save angular-cli
 $ npm install --save gulp
 
