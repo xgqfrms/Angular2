@@ -6,3 +6,48 @@
 
 
 [webpack](https://webpack.github.io/)
+
+
+```sh
+$ npm install browser-sync gulp --save-dev
+
+``` 
+## gulpfile.js
+```js
+	var gulp = require('gulp');
+	var browserSync = require('browser-sync').create();
+
+	// Static server
+	gulp.task('browser-sync', function() {
+	    browserSync.init({
+	        server: {
+	            baseDir: "./"
+	        }
+	    });
+	});
+``` 
+> or
+
+```js
+	var gulp = require('gulp');
+	var browserSync = require('browser-sync').create();
+
+	gulp.task('browser-sync', function() {
+	    browserSync.init({
+	        proxy: "yourlocal.dev"
+	    });
+	});
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+

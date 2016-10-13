@@ -1,11 +1,3 @@
-# GRUNT
-The JavaScript Task Runner
-
-[GRUNT](http://gruntjs.com/)
-***
-
-## [Browsersync + Grunt.js](https://www.browsersync.io/docs/grunt)
-```js
 // This shows a full config file!
 module.exports = function (grunt) {
     grunt.initConfig({
@@ -44,7 +36,3 @@ module.exports = function (grunt) {
     // define default task
     grunt.registerTask('default', ['browserSync', 'watch']);
 };
-``` 
-
-
-
