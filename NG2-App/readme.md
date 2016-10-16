@@ -21,5 +21,3 @@
 >$ ng new project_name
 >$ ng server
 ```
-
-
