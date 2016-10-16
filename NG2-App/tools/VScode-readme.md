@@ -41,3 +41,5 @@
 > MEAN/LEMP/LAMP/LNMP ?
 
 ## 使用Typora把markdown文件转换成pdf制作电子书
+
+## 使用Typora把markdown文件转换成pdf & html制作CV
