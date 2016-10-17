@@ -1,0 +1,8 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.renderWhitespace": "all"
+}
+
+    // Controls how the editor should render whitespace characters, 
+    // posibilties are 'none', 'boundary', and 'all'. 
+    // The 'boundary' option does not render single spaces between words.
