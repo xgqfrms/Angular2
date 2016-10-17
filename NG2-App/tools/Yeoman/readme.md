@@ -37,6 +37,8 @@ $ yo --version
 
 [Vanilla ES6 • TodoMVC](http://todomvc.com/examples/vanilla-es6/)
 
+[Todo's MVC application](https://egghead.io/lessons/tools-intro-to-the-production-webpack-course)
+
 
 ## step one by one.
 
