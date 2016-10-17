@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .footer:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 50px;
+            overflow: hidden;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 
+                        0 8px 0 -3px #f6f6f6, 
+                        0 9px 1px -3px rgba(0, 0, 0, 0.2), 
+                        0 16px 0 -6px #f6f6f6, 
+                        0 17px 2px -6px rgba(0, 0, 0, 0.2);
+        }
+        .footer{
+            color: #777;
+            padding: 10px 15px;
+            height: 20px;
+            text-align: center;
+            border-top: 1px solid #e6e6e6;
+        }
+        .container{
+            background: #000;
+            width: 700px;
+            height: 500px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .box{
+            background: rgba(255,37,255,0.7);
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="footer">
+                Box-shadow!
+            </div>
+        </div>
+    </div>
+</body>
+</html>

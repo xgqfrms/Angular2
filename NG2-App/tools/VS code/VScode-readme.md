@@ -65,3 +65,11 @@
 ## IntelliSense
 
 [jsconfig.json](https://code.visualstudio.com/docs/languages/javascript#_javascript-project-jsconfigjson)
+
+### multiline selection ?(how to modify defualt setting.json)
+
+Ctrl + Alt + Down-Arrow
+
+### format
+
+Shift + Alt + F
