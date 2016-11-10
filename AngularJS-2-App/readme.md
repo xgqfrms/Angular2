@@ -1,4 +1,4 @@
-# Quickstart - ts - Angular 2
+# Quickstart - ts - Angular 2.1.1 (2016.11.10)
 
 https://angular.io/docs/ts/latest/quickstart.html
 
