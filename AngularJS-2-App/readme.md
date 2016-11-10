@@ -43,3 +43,30 @@ Google Developer Day China (Shanghai)   Shanghai, China Dec. 14, 2016
 http://www.google.cn/intl/en/events/developerday2016/
 
 
+**********************************************************************************************************
+**********************************************************************************************************
+
+## config the typescript compiler path to 'app/dist' ???
+
+> tsconfig.json
+
+```json
+"outDir": "./app/dist"
+
+or
+
+"outDir": "app/dist"
+
+``` 
+> 
+
+## root === 'AngularJS-2-APP'
+
+
+"rootDir": "./",
+"project": "./",
+"listFiles": false,
+"declaration": false,
+"suppressImplicitAnyIndexErrors": true,
+"preserveConstEnums": true,
+"inlineSources": false

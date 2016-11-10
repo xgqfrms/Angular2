@@ -11,6 +11,8 @@
     // map tells the System loader where to look for things
     map: {
       // our app is within the app folder
+      // app: 'app/dist',  &&  main: './dist/main.js',
+      // Error: (SystemJS) XHR error (404 Not Found) loading http://localhost:3000/app/dist/dist/main.js(…)
       app: 'app',
       // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -29,7 +31,10 @@
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
       app: {
-        main: './main.js',
+        // index.html import path
+        // Error: (SystemJS) XHR error (404 Not Found) loading http://localhost:3000/app/dist/main.js(…)
+        // app: 'app/dist',  &&  main: './main.js',
+        main: './dist/main.js',
         defaultExtension: 'js'
       },
       rxjs: {
