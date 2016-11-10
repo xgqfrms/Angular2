@@ -25,4 +25,5 @@ var AppModule = (function () {
     return AppModule;
 }());
 exports.AppModule = AppModule;
+// controle 
 //# sourceMappingURL=app.module.js.map

@@ -15,11 +15,12 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>Hello Angular 2!</h1>'
+            template: '<h1>Hello Angular 2 & the latest version 2.1.1 relased!</h1>'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+//view
 //# sourceMappingURL=app.component.js.map

@@ -70,3 +70,48 @@ or
 "suppressImplicitAnyIndexErrors": true,
 "preserveConstEnums": true,
 "inlineSources": false
+
+
+# 架构概览
+
+通过使用Angularized标记编写HTML模板，编写组件类来管理这些模板，在服务中添加应用程序逻辑，以及在模块中装箱组件和服务来编写Angular应用程序。
+
+架构图标识了Angular应用程序的八个主要构建块：
+
+模块 (Modules)
+
+组件 (Components)
+
+模板 (Templates)
+
+元数据 (Metadata)
+
+数据绑定 (Data Binding)
+
+指令 (Directives)
+
+服务 (Services)
+
+依赖注入 (Dependency Injection)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
