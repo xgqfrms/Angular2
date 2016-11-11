@@ -93,3 +93,23 @@ AoT 编译器在构建过程中检测和报告模板绑定错误，避免用户�
 AoT 编译远在 HTML 模版和组件被服务到客户端之前，将它们编译到 JavaScript 文件。 没有模版可以阅读，没有高风险客户端 HTML 或 JavaScript 可利用，所以注入攻击的机会较少。
 
 
+## 编译该应用
+
+在命令行中执行下列命令，借助刚安装好的 ngc 编译器来启动 AoT 编译：  
+
+```sh
+
+$ "node_modules/.bin/ngc" -p tsconfig-aot.json
+
+``` 
+
+
+## 引导
+
+AoT 也改变了应用的引导方式。
+
+引导的方式从引导 AppModule 改成了引导生成的模块工厂： AppModuleNgFactory 。
+
+从使用 JiT 编译时的 platformBrowserDynamic.bootstrap 换成了 platformBrowser().bootstrapModuleFactory ，并把 AppModuleNgFactory 传进去。
+
+这里是 AoT 版本 main.ts 中的引导过程，下一个是你所熟悉的 JiT 版本。
