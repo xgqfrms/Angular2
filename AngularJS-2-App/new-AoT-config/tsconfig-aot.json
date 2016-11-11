@@ -9,12 +9,12 @@
         "removeComments": false,
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outDir": "./app/dist"
+        "outDir": "./dist"
     },
 
     "files": [
-        "app/app.module.ts",
-        "app/main.ts"
+        "./app/app.module.ts",
+        "./app/main.ts"
     ],
 
     "angularCompilerOptions": {

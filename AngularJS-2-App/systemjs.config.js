@@ -34,7 +34,7 @@
         // index.html import path
         // Error: (SystemJS) XHR error (404 Not Found) loading http://localhost:3000/app/dist/main.js(…)
         // app: 'app/dist',  &&  main: './main.js',
-        main: './dist/main.js',
+        main: '../dist/main.js',
         defaultExtension: 'js'
       },
       rxjs: {
