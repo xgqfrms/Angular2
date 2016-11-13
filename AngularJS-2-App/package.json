@@ -10,6 +10,10 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/AngularJS2.git"
+  },
   "license": [
     {
       "type": "MIT",
@@ -40,10 +44,6 @@
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
-    "rollup": "^0.36.3",
-    "rollup-plugin-commonjs": "^5.0.5",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-uglify": "^1.0.1",
     "typescript": "^2.0.3"
   }
 }
