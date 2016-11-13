@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>Hello Angular 2 & the latest version 2.1.1 relased!</h1>'
+            templateUrl: '../pages/app.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -23,4 +23,5 @@ var AppComponent = (function () {
 }());
 exports.AppComponent = AppComponent;
 //view
+// realtive path 
 //# sourceMappingURL=app.component.js.map

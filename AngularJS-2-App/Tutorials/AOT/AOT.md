@@ -137,7 +137,7 @@ AoT 编译远在 HTML 模版和组件被服务到客户端之前，将它们编�
 在命令行中执行下列命令，借助刚安装好的 ngc 编译器来启动 AoT 编译：  
 
 ```sh
-# windows "node_modules/.bin/ngc"
+
 $ "node_modules/.bin/ngc" -p tsconfig-aot.json
 
 ``` 
@@ -261,13 +261,7 @@ $ npm i -D rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugi
 
 
 
-## 运行 Rollup
-通过下列命令执行 Rollup 过程：
 
-```sh
-# windows "node_modules/.bin/rollup"
-$ "node_modules/.bin/rollup" -c rollup-config.js
-``` 
 
 
 

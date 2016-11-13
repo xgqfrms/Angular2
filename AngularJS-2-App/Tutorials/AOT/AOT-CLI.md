@@ -41,3 +41,36 @@ https://www.typescriptlang.org/docs/handbook/compiler-options.html
 
 
 
+## 以QuickStart为起点。对单独的app.component的一些小的更改导致这两个类和html文件：
+
+
+```sh
+# app.component.html
+<button (click)="toggleHeading()">Toggle Heading</button>
+<h1 *ngIf="showHeading">My First Angular App</h1>
+
+<h3>List of Heroes</h3>
+<div *ngFor="let hero of heroes">{{hero}}</div>
+
+``` 
+
+```sh
+# app.component.html
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: 'app.component.html'
+})
+export class AppComponent {
+  showHeading = true;
+  heroes = ['Magneta', 'Bombasto', 'Magma', 'Tornado'];
+
+  toggleHeading() {
+    this.showHeading = !this.showHeading;
+  }
+}
+
+``` 
+
+

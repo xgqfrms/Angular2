@@ -96,9 +96,21 @@ or
 
 
 
+*****************************************************************************************
+
+# 预编译器（AOT）
+
+这个烹饪指南描述如何通过在构建过程中进行预编译（ Ahead of Time - AoT ）来从根本上提升性能。
+
+https://angular.cn/docs/ts/latest/cookbook/aot-compiler.html
 
 
+## 运行
 
+```sh
+# ngc 参数 === tsc 参数 
+$ "node_modules/.bin/ngc" -p tsconfig-aot.json
+``` 
 
 
 
