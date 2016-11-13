@@ -35,7 +35,6 @@ https://angular.io/docs/ts/latest/cookbook/
 
 https://angular.io/events.html
 
-Google Developer Day China (Beijing)    Beijing, China  Dec. 8, 2016
 
 Google Developer Day China (Shanghai)   Shanghai, China Dec. 14, 2016
 
@@ -93,13 +92,6 @@ or
 服务 (Services)
 
 依赖注入 (Dependency Injection)
-
-
-
-
-
-
-
 
 
 
