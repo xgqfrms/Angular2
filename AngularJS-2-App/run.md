@@ -4,8 +4,16 @@
 https://angularjs-xgqfrms.c9users.io/
 
 
+# Angular 2, Browser support
+
+https://angular.io/docs/ts/latest/guide/browser-support.html
+
+https://github.com/xgqfrms-GitHub/webgeeker/blob/gh-pages/Angular2/Browser%20support.md
 
 
+# Easy Angular Authentication with JSON Web Tokens
+
+https://blog.angularjs.org/
 
 ## old
 tsc -p tsconfig.json
