@@ -8,10 +8,10 @@ https://www.typescriptlang.org/docs/tutorial.html
 
 
 ```sh
-# INSTALL
+# 安装
 $ npm install -g typescript
 
-# COMPILE
+# 编译
 $ tsc helloworld.ts
 
 ``` 
