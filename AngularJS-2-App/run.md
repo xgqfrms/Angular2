@@ -1,12 +1,70 @@
 # run
 
+
+## old
+tsc -p tsconfig.json
+
+"node_modules/.bin/rollup" -c rollup-config.js
+
+npm run lite 
+
+
+
+# step1 
+$ "node_modules/.bin/ngc" -p tsconfig-aot.json
+
+# ??? main.ts
+> import { AppModuleNgFactory } from '../AoT/app/app.module.ngfactory';
+
+# -p ???.json
+$ tsc -p tsconfig.json
+
+# step2 
+$ "node_modules/.bin/rollup" -c rollup-config.js
+
+> <script src="./dist/build.js"></script>
+
+# step3 
+$ npm run lite 
+
+
+
+
+
+
+
+
+
 ## complier ts->js
 
 ```sh
 $ npm start
+
+# *.josn
+$ tsc
+
+# -p ???.json
+$ tsc -p tsconfig.json
+
+$ "node_modules/.bin/ngc" -p tsconfig-aot.json
+
+import { AppModuleNgFactory } from '../AoT/app/app.module.ngfactory';
+
+
+
+# -w watch
+$ tsc -w -p tsconfig.json
+
+
+$ npm run lite 
+<!-- $ npm lite & tsc -p tsconfig.json -->
 ``` 
 
 
+"start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
 
 
 ## aot
@@ -32,6 +90,6 @@ $ "node_modules/.bin/ngc" -p tsconfig-aot.json
 $ "node_modules/.bin/rollup" -c rollup-config.js
 ``` 
 
-
+## <script src="./dist/build.js"></script>
 
 

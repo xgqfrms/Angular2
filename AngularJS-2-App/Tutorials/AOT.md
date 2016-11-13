@@ -270,7 +270,7 @@ $ "node_modules/.bin/rollup" -c rollup-config.js
 ``` 
 
 
-
+## <script src="./dist/build.js"></script>
 
 
 

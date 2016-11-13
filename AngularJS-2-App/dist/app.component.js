@@ -23,5 +23,5 @@ var AppComponent = (function () {
 }());
 exports.AppComponent = AppComponent;
 //view
-// realtive path 
+// realtive path
 //# sourceMappingURL=app.component.js.map

@@ -4,8 +4,11 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   templateUrl: '../pages/app.component.html'
 })
-export class AppComponent { }
+
+export class AppComponent{}
 
 
 //view
 // realtive path
+
+
