@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Racing App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+    <script src="https://unpkg.com/zone.js@0.6.25?main=browser"></script>
+    <script src="https://unpkg.com/reflect-metadata@0.1.8"></script>
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app/main').catch(function(err){ console.error(err);  });
+    </script>
+</head>
+<body>
+    <!-- 3. Display the application -->
+    <racing-app>Loading...</racing-app>
+</body>
+</html>
