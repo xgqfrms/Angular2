@@ -21,7 +21,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n        <h2>{{hero.name}} details!</h2>\n        <div>\n            <label>id: </label>\n            <input type=\"text\" value=\"{{hero.id}}\" placeholder=\"id\" readonly disabled>\n        </div>\n        <section class=\"container-fluid\">\n            <iframe width=\"420\" height=\"345\" src=\"https://www.youtube.com/embed/1jAYIs5s6ZU\" frameborder=\"0\" allowfullscreen></iframe>\n        </section>\n        <div>\n            <label>name: </label>\n            <input type=\"text\" value=\"{{hero.name}}\" placeholder=\"name\">\n        </div>\n        "
+            template: "\n        <h1>{{title}}</h1>\n        <h2>{{hero.name}} details!</h2>\n        <div>\n            <label>id: </label>\n            <input type=\"text\" value=\"{{hero.id}}\" placeholder=\"id\" readonly disabled>\n        </div>\n        <section class=\"container-fluid\">\n            <iframe width=\"420\" height=\"345\" src=\"https://www.youtube.com/embed/1jAYIs5s6ZU\" frameborder=\"0\" allowfullscreen></iframe>\n        </section>\n        <div>\n            <label>name: </label>\n            <input type=\"text\" [(ngModel)]=\"hero.name\" placeholder=\"name\">\n        </div>\n        "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
