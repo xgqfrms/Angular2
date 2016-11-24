@@ -120,3 +120,20 @@ After reading the above sections, feel free to skip around among the other pages
 > https://angular.io/docs/ts/latest/cookbook/ts-to-js.html  
 
 
+
+
+## path (tsconfig.json & systemjs.config.js)
+
+G:\wwwRoot\AngularJS\AngularJS-2-App
+
+"outDir": "dist"
+
+main: '../dist/main.js',
+
+
+
+
+
+
+
+

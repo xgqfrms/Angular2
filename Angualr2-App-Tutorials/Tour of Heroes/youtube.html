@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=3.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>youtube video</title>
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="container-fluid">
+            <ul class="list-group list-inline h1 text-center">
+                <li class="list-item"><a href="">home</a></li>
+                <li class="list-item"><a href="">about</a></li>
+                <li class="list-item"><a href="">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <div>
+            <ul>
+                <li><a href="http://www.xgqfrms.xyz﻿/">http://www.xgqfrms.xyz﻿/</a></li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <section class="container-fluid">
+            <h1>html5 & youtube</h1>
+            <a href="http://www.w3schools.com/html/html_youtube.asp">html_youtube</a>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/1jAYIs5s6ZU?playlist=1jAYIs5s6ZU&loop=1&autoplay=1&controls=1" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section class="container-fluid">
+            <object width="400" height="50" data="http://www.w3schools.com/html/bookmark.swf"></object>
+            <object width="400px" height="300px" data="http://www.xgqfrms.xyz﻿/index.html"></object>
+        </section>
+        <section>
+            <video width="320" height="240" controls>
+              <source src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+        </section>
+        <section>
+            <a href="http://bbb3d.renderfarming.net/download.html">Big Buck Bunny</a>
+            <div style="text-align:center"> 
+                <button onclick="playPause()">Play/Pause</button> 
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+                <br>
+                <video id="video1" width="420">
+                    <source src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div> 
+            <!-- HTML Audio/Video DOM Reference: http://www.w3schools.com/tags/ref_av_dom.asp -->
+            <script> 
+                var myVideo = document.getElementById("video1"); 
+                function playPause() { 
+                    if (myVideo.paused) 
+                        myVideo.play(); 
+                    else 
+                        myVideo.pause(); 
+                } 
+                function makeBig() { 
+                    myVideo.width = 560; 
+                } 
+                function makeSmall() { 
+                    myVideo.width = 320; 
+                } 
+                function makeNormal() { 
+                    myVideo.width = 420; 
+                } 
+            </script> 
+        </section>
+        <section>
+            <figure>
+                <img src="http://www.w3schools.com/html/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+                <figcaption>Fig1. - The Pulpit Rock, Norway.</figcaption>
+            </figure>
+        </section>
+        <section>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <p class="text-center h6 jumbotron btn-primary">copyright &copy; xgqfrms 2016</p>
+        </div>
+    </footer>
+</body>
+</html>
