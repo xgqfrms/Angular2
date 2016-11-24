@@ -163,7 +163,7 @@ index.html
 
 # go on
 
-https://school.scotch.io/getting-started-with-angular-2/setup?autoplay=true&fullscreen=true
+https://school.scotch.io/getting-started-with-angular-2/
 
 https://school.scotch.io/getting-started-with-angular-2/typescript-setup?autoplay=true&fullscreen=true
 
