@@ -23,7 +23,7 @@ export class AppComponent {
       user_id: 1,
       user_name: 'xgqfrms'
     };
-    heroes = HEROES;
+
     heros = [
         new Hero(1, 'Windstorm'),
         new Hero(13, 'Bombasto'),
@@ -31,6 +31,13 @@ export class AppComponent {
         new Hero(20, 'Tornado')
     ];
     myHero = this.heros[0];
+
+    heroes = HEROES;
+
+    selectedHero: Hero;
+    onSelect(hero: Hero): void {
+        this.selectedHero = hero;
+    }
 }
 
 // Ajax web service

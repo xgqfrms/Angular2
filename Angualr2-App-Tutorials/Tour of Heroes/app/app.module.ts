@@ -4,10 +4,13 @@ import { AppComponent }  from './app.component';
 
 import { FormsModule }   from '@angular/forms';
 
+import { MaterialModule } from '@angular/material';
+
 @NgModule({
     imports: [
         BrowserModule,
-        FormsModule 
+        FormsModule ,
+        MaterialModule.forRoot()
     ],
     declarations: [
         AppComponent

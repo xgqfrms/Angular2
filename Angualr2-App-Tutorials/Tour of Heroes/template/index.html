@@ -1,20 +1,15 @@
 <h1>{{title}}</h1>
-<h2 class="ngModel-h2"><span>{{hero_old.user_name}}</span>details!</h2>
 <div>
-    <label>id: </label>
-    <input type="text" value="{{hero_old.user_id}}" placeholder="id" readonly disabled>
+    <h2 class="ngModel-h2"><span>{{hero_old.user_name}}</span>details!</h2>
+    <div>
+        <label>id: </label>
+        <input type="text" value="{{hero_old.user_id}}" placeholder="id" readonly disabled>
+    </div>
+    <div>
+        <label>name: </label>
+        <input type="text" [(ngModel)]="hero_old.user_name" placeholder="hero_old-user_name">
+    </div>
 </div>
-<div>
-    <label>name: </label>
-    <input type="text" [(ngModel)]="hero_old.user_name" placeholder="hero_old-user_name">
-</div>
-<h2>My Heroes</h2>
-<p *ngIf="heroes.length > 3">There are many( > 3) heroes!</p>
-<ul class="heroes">
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
-        <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </li>
-</ul>
 <div>
     <h2>My favorite hero is: {{myHero.name}}</h2>
     <p *ngIf="heros.length > 3">There are many( > 3) heros!</p>
@@ -24,3 +19,22 @@
         </li>
     </ul>
 </div>
+<hr>
+<div>
+    <h2>My Heroes</h2>
+    <p *ngIf="heroes.length > 3">There are many( > 3) heroes!</p>
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </li>
+    </ul>
+    <div *ngIf="selectedHero">
+        <h2>{{selectedHero.name}} details!</h2>
+        <div><label>id: </label>{{selectedHero.id}}</div>
+        <div>
+            <label>name: </label>
+            <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+        </div>
+    </div>
+</div>
+
