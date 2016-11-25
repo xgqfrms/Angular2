@@ -13,10 +13,18 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
         // hero = 'xgqfrms';
-        this.hero = {
+        this.hero_old = {
+            user_id: 1,
+            user_name: 'xgqfrms'
+        };
+        /*Hero = () => {
+            let id: Number;
+            let name: String;
+        };
+        hero_old: Hero {
             id: 1,
             name: 'xgqfrms'
-        };
+        };*/
         this.heroes = HEROES;
     }
     AppComponent = __decorate([
@@ -31,12 +39,6 @@ var AppComponent = (function () {
 }());
 exports.AppComponent = AppComponent;
 // typescript static data type
-var Hero = (function () {
-    function Hero() {
-    }
-    return Hero;
-}());
-exports.Hero = Hero;
 // Ajax web service
 var HEROES = [
     { id: 11, name: 'Mr. Nice' },

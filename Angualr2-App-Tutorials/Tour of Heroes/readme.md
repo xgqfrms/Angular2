@@ -110,6 +110,101 @@ styles?: string[];
 ``` 
 
 
+## Click event
+
+> This UI pattern is widely known as "master-detail".  
+
+```code
+(click)="onSelect(hero)
+
+<li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+``` 
+
+## import { Hero_New } from './classes/hero.class';
+
+
+
+## 构造函数  
+> https://angular.io/docs/ts/latest/guide/displaying-data.html#!#ngFor  
+
+
+```js
+# 可能看起来不像类有属性，但它是。  
+# 构造函数参数的声明利用了TypeScript快捷方式。  
+
+export class Hero {
+    constructor(
+        public id: number,
+        public name: string) { }
+}
+
+# public id: number,
+# 这个简短的语法做了很多：  
+    声明一个构造函数参数及其类型。  
+    声明一个同名的公共属性。  
+    在创建一个类的实例时，使用相应的参数初始化该属性。  
+
+
+
+
+
+
+# 变量初始化  
+# 这个程序使用更简洁的“变量赋值”样式简单的简洁。  
+> https://angular.io/docs/ts/latest/guide/displaying-data.html#!#ngFor  
+# 类,声明属性  
+
+export class AppCtorComponent {
+    title: string;
+    myHero: string;
+
+    constructor() {
+        this.title = 'Tour of Heroes';
+        this.myHero = 'Windstorm';
+    }
+}
+``` 
+
+
+## 使用Hero类  
+
+```
+# 使用Hero类  
+
+import { Hero } from './classes/hero';
+
+heroes = [
+  new Hero(1, 'Windstorm'),
+  new Hero(13, 'Bombasto'),
+  new Hero(15, 'Magneta'),
+  new Hero(20, 'Tornado')
+];
+
+myHero = this.heroes[0];
+
+```
+
+
+## Conditional display with NgIf  
+
+
+```code
+<p *ngIf="heroes.length > 3">There are many heroes!</p>
+``` 
+
+## 双引号内的模板表达式 (*ngIf="heroes.length > 3")，外观和行为与TypeScript非常相似。
+
+Angular不显示和隐藏消息。  
+它是从DOM添加和删除段元素。  
+这提高了性能，特别是在有条件地包括或排除大块的HTML与大量数据绑定的大型项目。  
+
+# ??? DOM tree render ???  
+
+> https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=zh-cn  
+
+DOM 树与 CSSOM 树融合成渲染树.
+
+
 
 
 

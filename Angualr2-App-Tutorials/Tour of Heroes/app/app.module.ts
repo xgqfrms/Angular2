@@ -10,7 +10,7 @@ import { FormsModule }   from '@angular/forms';
         FormsModule 
     ],
     declarations: [
-        AppComponent 
+        AppComponent
     ],
     bootstrap: [ AppComponent ]
 })
