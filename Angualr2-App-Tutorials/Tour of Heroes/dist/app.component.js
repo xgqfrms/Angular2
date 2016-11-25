@@ -12,16 +12,18 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
-        // hero = 'Windstorm';
+        // hero = 'xgqfrms';
         this.hero = {
             id: 1,
             name: 'xgqfrms'
         };
+        this.heroes = HEROES;
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <h1>{{title}}</h1>\n        <h2>{{hero.name}} details!</h2>\n        <div>\n            <label>id: </label>\n            <input type=\"text\" value=\"{{hero.id}}\" placeholder=\"id\" readonly disabled>\n        </div>\n        <section class=\"container-fluid\">\n            <iframe width=\"420\" height=\"345\" src=\"https://www.youtube.com/embed/1jAYIs5s6ZU\" frameborder=\"0\" allowfullscreen></iframe>\n        </section>\n        <div>\n            <label>name: </label>\n            <input type=\"text\" [(ngModel)]=\"hero.name\" placeholder=\"name\">\n        </div>\n        "
+            templateUrl: '../template/index.html',
+            styleUrls: ['../public/css/style.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -35,4 +37,17 @@ var Hero = (function () {
     return Hero;
 }());
 exports.Hero = Hero;
+// Ajax web service
+var HEROES = [
+    { id: 11, name: 'Mr. Nice' },
+    { id: 12, name: 'Narco' },
+    { id: 13, name: 'Bombasto' },
+    { id: 14, name: 'Celeritas' },
+    { id: 15, name: 'Magneta' },
+    { id: 16, name: 'RubberMan' },
+    { id: 17, name: 'Dynama' },
+    { id: 18, name: 'Dr IQ' },
+    { id: 19, name: 'Magma' },
+    { id: 20, name: 'Tornado' }
+];
 //# sourceMappingURL=app.component.js.map

@@ -75,9 +75,39 @@ FormsModule ( form inputs )
 
 > https://angular.io/docs/ts/latest/tutorial/toh-pt2.html  
 
+### <li *ngFor="let hero of heroes">  
 
+> https://angular.io/docs/ts/latest/guide/displaying-data.html#ngFor  
+> https://angular.io/docs/ts/latest/guide/template-syntax.html#ngFor  
 
+## Metadata Properties: (元数据属性)  
 
+### templateUrl & styleUrls  
+
+> https://angular.io/docs/ts/latest/api/core/index/Component-decorator.html  
+
+> https://github.com/angular/angular/blob/2.2.2/modules/%40angular/core/src/metadata/directives.ts#L694-L715  
+
+```ts
+templateUrl?: string;
+
+/**
+* Specifies an inline template for an Angular component.
+*
+* Only one of `templateUrl` or `template` can be defined per Component.
+*/
+template?: string;
+
+/**
+* Specifies stylesheet URLs for an Angular component.
+*/
+styleUrls?: string[];
+
+/**
+* Specifies inline stylesheets for an Angular component.
+*/
+styles?: string[];
+``` 
 
 
 
