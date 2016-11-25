@@ -54,5 +54,23 @@ Analytics、实时数据库、身份验证、托管、存储、AdMob、崩溃报
 ![](firebase-single.png)
 ![](firebase & npm (-g).png)
 
+## Error-Halder: 在 AppComponent 内部的，export class 必须放在 @Component 前面！
+
+```code
+# 放前面！
+
+export class Hero_old {
+    constructor(user_id: number, user_name: string){}
+}
+
+# 放后面！
+
+@Component({
+    selector: 'my-app',
+    templateUrl: '../template/index.html',
+    styleUrls:['../public/css/style.css']
+
+})
+``` 
 
 

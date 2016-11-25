@@ -17,3 +17,26 @@ import { Hero_New } from './classes/hero.class';
 # 构造函数
 > https://angular.io/docs/ts/latest/guide/displaying-data.html#!#ngFor
 
+
+
+hero_old: Hero_old = {
+      user_id: 1,
+      user_name: 'xgqfrms'
+    };
+    Hero = () => {
+        let id: Number;
+        let name: String;
+    };
+    hero_old: Hero {
+        id: 1,
+        name: 'xgqfrms'
+    };
+
+
+
+
+
+
+
+
+

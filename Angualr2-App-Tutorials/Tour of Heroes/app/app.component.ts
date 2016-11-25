@@ -4,6 +4,10 @@ import { Hero_New } from './classes/hero.class';
 
 import { Hero } from './classes/hero';
 
+export class Hero_old {
+    constructor(user_id: number, user_name: string){}
+}
+
 @Component({
     selector: 'my-app',
     templateUrl: '../template/index.html',
@@ -11,21 +15,14 @@ import { Hero } from './classes/hero';
 
 })
 
+
 export class AppComponent {
     title = 'Tour of Heroes';
-    // hero = 'xgqfrms';
+
     hero_old: Hero_old = {
       user_id: 1,
       user_name: 'xgqfrms'
     };
-    /*Hero = () => {
-        let id: Number;
-        let name: String;
-    };
-    hero_old: Hero {
-        id: 1,
-        name: 'xgqfrms'
-    };*/
     heroes = HEROES;
     heros = [
         new Hero(1, 'Windstorm'),
