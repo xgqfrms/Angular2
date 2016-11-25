@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 import { Hero_New } from './classes/hero.class';
 
+import { Hero } from './classes/hero';
+
 @Component({
     selector: 'my-app',
     templateUrl: '../template/index.html',
@@ -25,8 +27,14 @@ export class AppComponent {
         name: 'xgqfrms'
     };*/
     heroes = HEROES;
+    heros = [
+        new Hero(1, 'Windstorm'),
+        new Hero(13, 'Bombasto'),
+        new Hero(15, 'Magneta'),
+        new Hero(20, 'Tornado')
+    ];
+    myHero = this.heros[0];
 }
-// typescript static data type
 
 // Ajax web service
 const HEROES: Hero_New[] = [

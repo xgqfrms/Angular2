@@ -14,5 +14,6 @@ import { Hero_New } from './classes/hero.class';
 }
 */
 
-// 构造函数
-// https://angular.io/docs/ts/latest/guide/displaying-data.html#!#ngFor
+# 构造函数
+> https://angular.io/docs/ts/latest/guide/displaying-data.html#!#ngFor
+

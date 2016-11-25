@@ -15,3 +15,12 @@
         <span class="badge">{{hero.id}}</span> {{hero.name}}
     </li>
 </ul>
+<div>
+    <h2>My favorite hero is: {{myHero.name}}</h2>
+    <p *ngIf="heros.length > 3">There are many( > 3) heros!</p>
+    <ul class="heroes">
+        <li *ngFor="let herox of heros" (click)="onSelect(herox)">
+            <span class="badge">{{herox.id}}</span> {{herox.name}}
+        </li>
+    </ul>
+</div>

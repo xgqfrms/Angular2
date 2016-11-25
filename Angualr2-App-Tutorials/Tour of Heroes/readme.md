@@ -171,6 +171,8 @@ export class AppCtorComponent {
 ```
 # 使用Hero类  
 
+> https://angular.io/docs/ts/latest/guide/displaying-data.html#!#ngFor  
+
 import { Hero } from './classes/hero';
 
 heroes = [
