@@ -2,6 +2,8 @@
 
 > (offical docs learning notes)
 
+> G:\wwwRoot\AngularJS\AngularJS-2-App\Tutorials  
+
 
 ## QuickStart  
 

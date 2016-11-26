@@ -25,6 +25,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
       '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.js',
+      '@angular/material': 'npm:@angular/material/material.umd.js',
 
       // other libraries
       'rxjs':                      'npm:rxjs',

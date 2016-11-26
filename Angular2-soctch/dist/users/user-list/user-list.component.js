@@ -9,28 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
-var forms_1 = require('@angular/forms');
-var material_1 = require('@angular/material');
-var AppModule = (function () {
-    function AppModule() {
+var user_service_1 = require('../../shared/services/user.service');
+var UserListComponent = (function () {
+    function UserListComponent(service) {
+        this.service = service;
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule,
-                material_1.MaterialModule.forRoot()
-            ],
-            declarations: [
-                app_component_1.AppComponent
-            ],
-            bootstrap: [app_component_1.AppComponent]
+    UserListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.service.getUsers()
+            .subscribe(function (users) { return _this.users = users; });
+    };
+    UserListComponent = __decorate([
+        core_1.Component({
+            styles: ["\n    .user-card { cursor: pointer; } \n  "],
+            templateUrl: './app/users/user-list/user-list.component.html'
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+        __metadata('design:paramtypes', [user_service_1.UserService])
+    ], UserListComponent);
+    return UserListComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.UserListComponent = UserListComponent;
+//# sourceMappingURL=user-list.component.js.map
