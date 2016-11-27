@@ -17,10 +17,13 @@ export class AppComponent { name = 'Angular'; }
 template:
 templateURL:
 样式
-style:
-styleURL:
+styles:
+styleURLs:
 组件类 class AppComponent { name = 'Angular'; }
 数据 name = 'Angular';
+
+https://github.com/angular/angular/blob/2.2.2/modules/%40angular/core/src/metadata/directives.ts#L694-L715
+
 
 */
 

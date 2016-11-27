@@ -1,6 +1,8 @@
-# ngClassifieds - Source Code for Getting Started with Angular 1.x
+# Getting Started with Angular 1.5.8
 
-This is the source code for my course **[Getting Started with Angular 1.x](https://school.scotch.io/getting-started-with-angularjs-1x)** available at [Scotch School](https://school.scotch.io).
+[Getting Started with Angular 1.x](https://school.scotch.io/getting-started-with-angularjs-1x)  
+
+[Scotch School](https://school.scotch.io)  
 
 To run the app, first install the dependencies with npm.
 
@@ -15,6 +17,8 @@ npm install -g http-server
 http-server
 ```
 
-## License
 
-MIT
+
+
+
+
