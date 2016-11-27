@@ -16,13 +16,14 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.service.getUsers()
+        this.service
+            .getUsers()
             .subscribe(function (users) { return _this.users = users; });
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <div class=\"container\">\n\n      <div class=\"navbar navbar-default\">\n        <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n            <a routerLink=\"/\" class=\"navbar-brand\">My HTTP App</a>\n          </div>\n\n          <ul class=\"nav navbar-nav\"> \n            <li><a routerLink=\"/users\">Users</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <router-outlet></router-outlet>\n    </div>\n  "
+            template: "\n        <div class=\"container\">\n            <div class=\"navbar navbar-default\">\n                <div class=\"container-fluid\">\n                    <div class=\"navbar-header\">\n                        <a routerLink=\"/\" class=\"navbar-brand\">My HTTP App</a>\n                    </div>\n                    <ul class=\"nav navbar-nav\"> \n                        <li>\n                            <a routerLink=\"/users\">Users</a>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n            <router-outlet></router-outlet>\n        </div>\n    "
         }), 
         __metadata('design:paramtypes', [user_service_1.UserService])
     ], AppComponent);

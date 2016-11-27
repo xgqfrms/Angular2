@@ -9,27 +9,32 @@ import { UserService } from './shared/services/user.service';
 import { UsersComponent } from './users/users.component';
 import { UserListComponent } from './users/user-list/user-list.component';
 import { UserSingleComponent } from './users/user-single/user-single.component';
+import { AnimationsComponent } from './animation/animations.component';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/catch';
 
 @NgModule({
-  imports: [ 
-    BrowserModule,
-    HttpModule,
-    FormsModule,
-    routing
-  ],
-  declarations: [ 
-    AppComponent,
-    UsersComponent,
-    UserListComponent,
-    UserSingleComponent
-  ],
-  providers: [
-    UserService
-  ],
-  bootstrap: [ AppComponent ]
+    imports: [ 
+        BrowserModule,
+        HttpModule,
+        FormsModule,
+        routing
+    ],
+    declarations: [ 
+        AppComponent,
+        UsersComponent,
+        UserListComponent,
+        UserSingleComponent,
+        AnimationsComponent
+    ],
+    providers: [
+        UserService
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
+
 export class AppModule {}

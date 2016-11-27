@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 217 376" xml:space="preserve" style="background: #0f0;">
+<style type="text/css">
+	.st0{display:none;fill:#0092A5;stroke:#231F20;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	g {
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: .5s;
+		animation-name: fader;
+		-moz-animation-fill-mode: forwards;
+		-moz-animation-duration: .5s;
+		-moz-animation-name: fader;
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-duration: .5s;
+		-webkit-animation-name: fader;
+		position:absolute;
+	}
+	#phone {
+		
+	}
+	#screen {
+		animation-delay: .3s;
+		-moz-animation-delay: .3s;
+	}
+	#menu {
+		animation-delay: .6s;
+		-moz-animation-delay: .6s;
+	}
+	#menu_buttons {
+		animation-delay: .9s;
+		-moz-animation-delay: .9s;
+	}
+	#button {
+		animation-delay: 1.2s;
+		-moz-animation-delay: 1.2s;
+	}
+	#content_1 {
+		animation-delay: 1.5s;
+		-moz-animation-delay: 1.5s;
+	}
+	#content_2 {
+		animation-delay: 1.8s;
+		-moz-animation-delay: 1.8s;
+	}
+	#content_3{
+		animation-delay: 2.1s;
+		-moz-animation-delay: 2.1s;
+	}
+	@-webkit-keyframes fader {
+	  0%   { opacity: 0; transform: translateY(0px); }
+	  100% { opacity: 1; transform: translateY(15px); }
+	}
+	@-moz-keyframes fader {
+	  0%   { opacity: 0; transform: translateY(0px); }
+	  100% { opacity: 1; transform: translateY(15px); }
+	}
+	@-o-keyframes fader {
+	  0%   { opacity: 0; transform: translateY(0px); }
+	  100% { opacity: 1; transform: translateY(15px); }
+	}
+	@keyframes fader {
+	  0%   { opacity: 0; transform: translateY(0px); }
+	  100% { opacity: 1; transform: translateY(15px); }
+	}
+</style>
+<g id="phone">
+	<rect class="st0" width="217" height="376"/>
+	<path class="st1" d="M191.2,366H18.8C12.3,366,7,360.7,7,354.2V21.8C7,15.3,12.3,10,18.8,10h172.3c6.5,0,11.8,5.3,11.8,11.8v332.3
+		C203,360.7,197.7,366,191.2,366z"/>
+</g>
+<g id="screen">
+	<path class="st1" d="M187.7,310H22.3c-3.1,0-5.7-2.6-5.7-5.7V26.7c0-3.1,2.6-5.7,5.7-5.7h165.4c3.1,0,5.7,2.6,5.7,5.7v277.6
+		C193.4,307.4,190.8,310,187.7,310z"/>
+</g>
+<g id="menu">
+	<path class="st1" d="M191.5,85H18.5c-1,0-1.9-0.8-1.9-1.9V55.9c0-1,0.8-1.9,1.9-1.9h173.1c1,0,1.9,0.8,1.9,1.9v27.3
+		C193.4,84.2,192.6,85,191.5,85z"/>
+</g>
+<g id="menu_buttons">
+	<line class="st1" x1="70.9" y1="85" x2="70.9" y2="54"/>
+	<line class="st1" x1="139" y1="85" x2="139" y2="54"/>
+</g>
+<g id="button">
+	<path class="st1" d="M119,349H83.7c-3.8,0-7-3.1-7-7l0,0c0-3.9,3.1-7,7-7H119c3.8,0,7,3.1,7,7l0,0C126,345.9,122.9,349,119,349z"/>
+</g>
+<g id="content_1">
+	<line class="st1" x1="101.4" y1="115.6" x2="167.1" y2="115.6"/>
+	<rect x="37.6" y="104.6" class="st1" width="47.9" height="52.8"/>
+	<line class="st1" x1="101.4" y1="129.5" x2="160.1" y2="129.5"/>
+	<line class="st1" x1="101.4" y1="143" x2="135.1" y2="143"/>
+</g>
+<g id="content_2">
+	<line class="st1" x1="101.4" y1="182.6" x2="167.1" y2="182.6"/>
+	<rect x="37.6" y="171.6" class="st1" width="47.9" height="52.8"/>
+	<line class="st1" x1="101.4" y1="196.5" x2="160.1" y2="196.5"/>
+	<line class="st1" x1="101.4" y1="210" x2="135.1" y2="210"/>
+</g>
+<g id="content_3">
+	<line class="st1" x1="101.4" y1="249.6" x2="167.1" y2="249.6"/>
+	<rect x="37.6" y="238.6" class="st1" width="47.9" height="52.8"/>
+	<line class="st1" x1="101.4" y1="263.5" x2="160.1" y2="263.5"/>
+	<line class="st1" x1="101.4" y1="277" x2="135.1" y2="277"/>
+</g>
+</svg>

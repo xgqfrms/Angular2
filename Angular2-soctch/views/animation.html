@@ -1,0 +1,15 @@
+<div class="container ad">
+    <div class="row">
+        <div class="animation-button">
+            <button (click)="toggleMove" class="btn btn-primary btn-lg">
+                Click me to show Animation!
+            </button>
+        </div>
+        <div class="jumbotron">
+            <h3>here you will see the changes!</h3>
+            <div id="content" [@focusPanel]="state">
+                Animating ...
+            </div>
+        </div>
+    </div>
+</div>
