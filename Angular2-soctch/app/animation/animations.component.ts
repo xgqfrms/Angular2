@@ -31,11 +31,17 @@ export class AnimationsComponent {}
 
 /**
  * https://www.youtube.com/watch?v=-pFEzm_Jn-o
+ * https://coursetro.com/posts/code/25/Understanding-Angular-2-Animations-Tutorial
  *
+ * EXPERIMENTAL (试验性)
  * https://angular.io/docs/ts/latest/api/core/index/state-function.html
  * https://angular.io/docs/ts/latest/api/core/index/style-function.html
  * https://angular.io/docs/ts/latest/api/core/index/trigger-function.html
  * https://angular.io/docs/ts/latest/api/core/index/transition-function.html
+ * https://angular.io/docs/ts/latest/api/core/index/keyframes-function.html
+ * https://angular.io/docs/ts/latest/api/core/index/animate-function.html
+ * https://angular.io/docs/ts/latest/api/core/index/sequence-function.html
+ * https://angular.io/docs/ts/latest/api/core/index/group-function.html
  *
  * Metadata Properties: 
  * styleUrls, templateUrl, animations, providers, selector ...
