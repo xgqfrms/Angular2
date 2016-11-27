@@ -1,13 +1,23 @@
-<div class="container ad">
-    <div class="row">
+<div class="container">
+    <div class="row  ad">
         <div class="animation-button">
-            <button (click)="toggleMove" class="btn btn-primary btn-lg">
+            <button class="btn btn-primary btn-lg">
                 Click me to show Animation!
             </button>
         </div>
-        <div class="jumbotron">
+        <div class="col-md-6">
             <h3>here you will see the changes!</h3>
-            <div id="content" [@focusPanel]="state">
+        </div>
+    </div>
+    <hr>
+    <div class="row test">
+        <div class="col-md-6">
+            <button (click)="toggleMove()">
+                Click Animation!
+            </button>
+        </div>
+        <div class="col-md-8">
+            <div id="content" [@focusPanel]='state' [@movePanel]='state' class="col-md-6">
                 Animating ...
             </div>
         </div>
