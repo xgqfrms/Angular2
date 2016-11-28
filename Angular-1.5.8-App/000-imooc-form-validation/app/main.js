@@ -1,3 +1,8 @@
+/**
+ * AngularJS 1.x 表单验证
+ * 11/28/2016
+ * xgqfrms
+ */
 
 angular.module("ngApp", []);
 
@@ -5,11 +10,3 @@ angular.module("ngApp", []);
 
 
 
-
-
-
-/**
- * AngularJS 1.x 表单验证
- * 11/28/2016
- * xgqfrms
- */

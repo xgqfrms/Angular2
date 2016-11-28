@@ -6,6 +6,11 @@ const port = 3000;
 
 const app = express();
 
+/**
+ * static file path ??? & router ???
+ * 
+ */
+
 
 // var cache = {};
 // cache["index.html"] = fs.readFileSync( __dirname + '/views/testview.html');
@@ -14,7 +19,31 @@ let cache = [];
 cache[0] = fs.readFileSync( __dirname + '/index.html');
 cache[1] = fs.readFileSync( __dirname + '/views/testview.html');
 
+// path add
+cache[2] = fs.readFileSync( __dirname + '/app/main.js');
+app.get('/app/main.js', (req, res) => {
+    res.setHeader('Content-Type', 'text/javascript');
+    res.send( cache[2] );
+});
+
+// path add 
+/*
+http://www.w3schools.com/tags/tag_link.asp
+<link rel="stylesheet" type="text/css" href="theme.css">
+ */
+cache[3] = fs.readFileSync( __dirname + '/public/css/style.css');
+app.get('/public/css/style.css', (req, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    res.send( cache[3] );
+});
+
+
 app.get('/', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.send( cache[0] );
+});
+
+app.get('/index', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.send( cache[0] );
 });

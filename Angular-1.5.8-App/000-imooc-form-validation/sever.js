@@ -18,3 +18,11 @@ fs.readFile('./index.html', (err, html) => {
         console.log(`Server running at http://${hostname}:${port}/`);
     });
 });
+
+/**
+ * router path error ？
+ *
+ * static file path
+ *
+ * 
+ */

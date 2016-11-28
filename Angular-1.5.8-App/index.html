@@ -1,12 +1,21 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, minimum-scale=1.0, maximum-scale=3.0">
+    <!-- Setting the right viewport -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/png">
     <title>Angular 1.5.8 App</title>
+    <!-- http://www.imooc.com/qadetail/185233 -->
+    <!-- required for angular routing -->
+    <base href="/">
+    <!-- css ? CDN-->
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
     <link href="node_modules/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Setting the right viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   </head>
   <body ng-app="ngClassifieds">
     <div ui-view></div>
