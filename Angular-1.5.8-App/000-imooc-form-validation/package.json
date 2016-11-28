@@ -1,0 +1,28 @@
+{
+  "name": "express-node.js-angularjs-1.x",
+  "version": "1.5.9",
+  "description": "express, node.js, angularjs 1.5.9,",
+  "main": "index.js",
+  "scripts": {
+    "test": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/AngularJS2.git"
+  },
+  "keywords": [
+    "xgqfrms",
+    "AngularJS",
+    "node.js",
+    "express"
+  ],
+  "author": "xgqfrms,webgeeker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/AngularJS2/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/AngularJS2#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
