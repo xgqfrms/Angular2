@@ -43,6 +43,12 @@ app.get('/', (req, res) => {
     res.send( cache[0] );
 });
 
+app.get('/index*', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.send( cache[0] );
+});
+
+/*
 app.get('/index', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.send( cache[0] );
@@ -57,6 +63,7 @@ app.get('/index.*', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.send( cache[0] );
 });
+ */
 
 
 
