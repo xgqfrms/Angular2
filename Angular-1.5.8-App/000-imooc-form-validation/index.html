@@ -7,8 +7,9 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.png" type="image/png">
     <title>AngularJS 1.x Form Validation App!</title>
+    <!-- http://www.imooc.com/qadetail/185233?t=277273#id_277273 -->
     <!-- required for angular routing -->
-    <base href="/">
+    <!-- <base href="/"> -->
     <!-- bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
@@ -16,12 +17,15 @@
     <div>
         <h1>AngularJS 1.x form validation</h1>
     </div>
-    <div ng-app="NG_App">
-        <!-- <ng-app></ng-app> -->
+    <div ng-app="ngApp">
+        <input type="text" ng-model="name">
+        <div>
+            input name : {{name}}
+        </div>
     </div>
     <!-- js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js" integrity="sha256-xSfk1YU5PcIcFI45sbeoAZfcAPxmulrxHleQaCJQ3Jc=" crossorigin="anonymous"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-animate.min.js" integrity="sha256-jhN6cfVMndcSv9y0CCT3VbtLnVpucjsKleLElzf3NDw=" crossorigin="anonymous"></script> -->
-    <script src="app/main.js"></script>
+    <script src="./app/main.js"></script>
 </body>
 </html>
