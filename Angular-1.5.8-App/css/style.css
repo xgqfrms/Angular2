@@ -1,31 +1,48 @@
 md-card img {
-  width: 100%;
-  height: auto;
-  min-height: 0px;
+    width: 100%;
+    height: auto;
+    min-height: 0px;
 }
 
 md-icon {
-  height: auto;
+    height: auto;
 }
 
 .filters md-input-container {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
-.classified.ng-enter, .classified.ng-move {
-  transition: 0.4s all;
-  opacity: 0;
+.classified.ng-enter,
+.classified.ng-move {
+    -webkit-transition: 0.4s all;
+    transition: 0.4s all;
+    opacity: 0;
 }
 
-.classified.ng-enter.ng-enter-active, .classified.ng-move.ng-move-active {
-  opacity: 1;
+.classified.ng-enter.ng-enter-active,
+.classified.ng-move.ng-move-active {
+    opacity: 1;
 }
 
 .classified.ng-leave {
-  animation: 0.4s fade_classified;
+    -webkit-animation: 0.4s fade_classified;
+            animation: 0.4s fade_classified;
+}
+
+@-webkit-keyframes fade_classified {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes fade_classified {
-  from { opacity: 1; }
-  to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

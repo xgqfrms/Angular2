@@ -18,7 +18,11 @@ http-server
 ```
 
 
+https://school.scotch.io/getting-started-with-angularjs-1x
 
+https://github.com/scotch-io/angular1-starter-course
+
+https://scotch-io.github.io/angular1-starter-course/
 
 
 

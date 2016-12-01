@@ -1,0 +1,39 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-open="sidenavOpen">
+  <md-toolbar class="md-theme-light">
+    <h1 class="md-toolbar-tools">{{ vm.sidebarTitle }}</h1>
+  </md-toolbar>
+  <md-content layout-padding>
+    <form>
+      <md-input-container>
+        <label for="title">Title</label>
+        <input type="text" id="title"
+               ng-model="vm.classified.title" md-autofocus>
+      </md-input-container>
+      <md-input-container>
+        <label for="price">Price</label>
+        <input type="text" id="price"
+             ng-model="vm.classified.price">
+      </md-input-container>
+      <md-input-container>
+        <label for="description">Description</label>
+        <textarea type="text" id="description"
+              ng-model="vm.classified.description">
+        </textarea>
+      </md-input-container>
+      <md-input-container>
+        <label for="image">Image Link</label>
+        <input type="text" id="image"
+              ng-model="vm.classified.image">
+      </md-input-container>
+      <md-button ng-if="!vm.editing" ng-click="vm.saveClassified(vm.classified)" class="md-primary">
+        Save
+      </md-button>
+      <md-button ng-if="vm.editing" ng-click="vm.saveEdit()" class="md-primary">
+        Save Edit
+      </md-button>
+      <md-button ng-click="vm.closeSidebar()" class="md-warn">
+        Cancel
+      </md-button>
+    </form>
+  </md-content>
+</md-sidenav>
