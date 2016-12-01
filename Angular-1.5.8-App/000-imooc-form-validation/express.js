@@ -17,10 +17,12 @@ const app = express();
 
 let cache = [];
 cache[0] = fs.readFileSync( __dirname + '/index.html');
+
 cache[1] = fs.readFileSync( __dirname + '/views/testview.html');
 
 // path add
 cache[2] = fs.readFileSync( __dirname + '/app/main.js');
+
 app.get('/app/main.js', (req, res) => {
     res.setHeader('Content-Type', 'text/javascript');
     res.send( cache[2] );
@@ -32,6 +34,7 @@ http://www.w3schools.com/tags/tag_link.asp
 <link rel="stylesheet" type="text/css" href="theme.css">
  */
 cache[3] = fs.readFileSync( __dirname + '/public/css/style.css');
+
 app.get('/public/css/style.css', (req, res) => {
     res.setHeader('Content-Type', 'text/css');
     res.send( cache[3] );

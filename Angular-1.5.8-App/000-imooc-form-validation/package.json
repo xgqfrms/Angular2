@@ -2,9 +2,10 @@
   "name": "express-node.js-angularjs-1.x",
   "version": "1.5.9",
   "description": "express, node.js, angularjs 1.5.9,",
-  "main": "index.js",
+  "main": "express.js",
   "scripts": {
-    "test": "app"
+    "start": "node express.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/xgqfrms/AngularJS2#readme",
   "dependencies": {
+    "browser-sync": "^2.18.2",
     "express": "^4.14.0"
   }
 }
