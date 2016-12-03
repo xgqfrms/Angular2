@@ -2,6 +2,22 @@
 
 https://www.udemy.com/ultimate-angular-2/
 
+## update CLI 1.0.0.beta22 
+
+```sh
+$ npm i -g angular-cli@v1.0.0-beta.22
+
+$ ng new app
+# very slowly , just waiting for it install all mpackages!
+
+$ cd app
+# open app folder path
+
+$ ng build
+
+$ ng server
+``` 
+
 
 ## CLI
 
@@ -12,10 +28,25 @@ $ ng g directive test.directive.ts
 
 $ ng g service test.service.ts
 
-$ ng -?
+$ ng g route test.route.ts
+
+$ ng g pipe test.pipe.ts
+
+# 输出 angular­cli, node和操作系统的版本。
+
+$ ng version
+# 别名:
+$ ng v
+$ ng ­v
+
 ``` 
 
 
+
+error? can not edit the file on Chrome!
+what's wrong with this?
+
+You can't perform that action at this time.
 
 
 

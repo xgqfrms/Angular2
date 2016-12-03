@@ -41,7 +41,6 @@ https://api.github.com/search/repositories?q=language:javascript&user=xgqfrms
 https://api.github.com/search/repositories?q=language:javascript&user=xgqfrms&sort=stars
 
 
-xgqfrms?tab=followers
 
 
 
