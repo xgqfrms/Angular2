@@ -41,6 +41,19 @@ $ ng ­v
 
 ``` 
 
+## The goal of tools should be easy using & save time !
+
+https://github.com/angular/angular-cli/issues/3376
+
+> why not show the localhost://4200 in the terminal? 
+
+
+```sh
+$ browser-sync start --server --files "./*.*"
+
+``` 
+
+
 
 
 error? can not edit the file on Chrome!
