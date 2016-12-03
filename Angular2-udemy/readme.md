@@ -69,3 +69,25 @@ $ browser-sync start --server --files "./*.*"
 https://xgqfrms.github.io/vue/App-Native/index.html
 
 
+## What's new in TypeScript (TypeScript 2.1)
+
+https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#typescript-20
+
+
+## ng2-app (2.0.3)
+https://github.com/Microsoft/TypeScript/releases/tag/v2.0.3
+
+
+## tsc -v (2.0.10)
+
+http://www.typescriptlang.org/docs/tutorial.html  
+
+http://www.typescriptlang.org/#download-links  
+
+https://github.com/xgqfrms-GitHub/webgeeker/projects/new
+
+my first projects !
+
+GitHub & Projects management!
+
+
