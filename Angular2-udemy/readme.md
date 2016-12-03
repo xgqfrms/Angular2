@@ -13,9 +13,20 @@ $ ng new app
 $ cd app
 # open app folder path
 
+## test version (./src)
+$ ng server
+
+# why not show the localhost://4200 in the terminal? 
+# browser-sync for (./dist)
+$ browser-sync start --server
+
+## publish development version (./dist)
 $ ng build
 
-$ ng server
+## publish production version (./dist)  
+## (./angular-cli.json & ./src/environments/environment.prod.ts)
+$ ng build --env=prod
+
 ``` 
 
 
@@ -49,6 +60,8 @@ https://github.com/angular/angular-cli/issues/3376
 
 
 ```sh
+$ browser-sync start --server
+
 $ browser-sync start --server --files "./*.*"
 
 ``` 
