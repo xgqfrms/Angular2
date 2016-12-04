@@ -1,5 +1,9 @@
 #  JSX & tsconfig.json
 
+## React & preserve
+
+TypeScript ships with two JSX modes: preserve and react.
+
 
 http://www.typescriptlang.org/docs/handbook/jsx.html
 
