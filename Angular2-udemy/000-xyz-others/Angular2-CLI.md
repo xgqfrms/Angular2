@@ -1,6 +1,29 @@
+# Angular2 
+
+## NgModule 
+
+{
+    declarations=Directives(Components)
+
+    imports=Modules(Routing) 
+
+    providers=Services
+
+    bootstrap=AppComponent(root views)
+}
+
+## typescript class & interface
+
+ng g class my-new-class  
+
+ng g interface my-new-interface  
+
+
 
 https://github.com/angular/angular-cli#webpack-update
 
+
+## ng g ???
 
 Scaffold	Usage  
 
