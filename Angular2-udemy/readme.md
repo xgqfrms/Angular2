@@ -90,7 +90,7 @@ http://www.typescriptlang.org/play/
 {
     "typescript.check.tscVersion": false,
     "typescript.check.workspaceVersion": false,
-    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.tsdk": "./ng2-app/node_modules/typescript/lib",
 }
 ```
 
