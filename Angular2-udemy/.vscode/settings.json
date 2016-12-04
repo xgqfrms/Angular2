@@ -2,7 +2,7 @@
 {
     "typescript.check.tscVersion": false,
     "typescript.check.workspaceVersion": false,
-    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.tsdk": "./node_modules/typescript/lib/",
     "editor.tabCompletion": true,
     "editor.mouseWheelZoom": true,
     "editor.formatOnSave": false,

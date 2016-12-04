@@ -2,6 +2,19 @@
 
 https://www.udemy.com/ultimate-angular-2/
 
+
+******************************************************************************************
+# install & create & run ng2app
+
+```sh
+$ npm i -g angular-cli
+$ ng new Angular2-App
+$ cd Angular2-App
+$ ng server
+``` 
+
+******************************************************************************************
+
 ## update CLI 1.0.0.beta22 
 
 ```sh
