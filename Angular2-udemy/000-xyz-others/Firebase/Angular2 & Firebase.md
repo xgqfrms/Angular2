@@ -31,3 +31,23 @@ https://firebase.google.com/docs/web/setup
 https://firebase.google.com/docs/cli/  
 
 
+## Hosting Angular 2 Applications On Firebase  
+http://codingthesmartway.com/hosting-angular-2-applications-on-firebase/  
+https://www.youtube.com/watch?v=82PRCg4QfpE  
+
+## Angular2 CLI build production  
+```sh
+$ ng build --prop
+
+``` 
+
+
+
+
+
+
+
+
+
+
+

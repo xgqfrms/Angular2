@@ -45,3 +45,11 @@ window.location.host
 // 
 
 
+## C# 7
+https://www.infoq.com/minibooks/emag-c-sharp-preview?utm_source=infoqWeeklyNewsletter&utm_medium=WeeklyNL_EditorialContenteMag&utm_campaign=12062016news
+
+
+
+
+
+
