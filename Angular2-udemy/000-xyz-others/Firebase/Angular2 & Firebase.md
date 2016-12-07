@@ -51,19 +51,21 @@ $ sudo npm i -g firebase-tools
 $ npm i -g firebase-tools
 
 # login ? browser auth
+
 $ firebase login
-$ NO 
-# browser auth (yes)
+# NO 
+# browser auth 
+
 $ firebase init
+# yes
 # hosting & enter
-database.rules.json
+# database.rules.json
 
-dist
-
-yes
-
-no
-
+# dist
+# yes
+# no
+$ firebase use --add
+# alias ???
 $ firebase deploy
 
 URL
