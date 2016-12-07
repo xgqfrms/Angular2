@@ -108,16 +108,54 @@ https://ide.c9.io/xgqfrms/angular2
 > process.env.PORT || 4200, process.env.IP || "127.0.0.1"
 
 ```sh
+$ npm i -D express async socket.io
+
 $ npm i -D express
 $ npm i -D async
 $ npm i -D socket.io
+``` 
+
+## test  ??? c9.io OK ??? here is error ???
+
+```sh
+$ node express-server.js
+
+# or (package.json) ? conflict
+
+"scripts": {
+    "test": "node express-server.js"
+},
 
 ``` 
 
+## npm scripts  
+https://docs.npmjs.com/misc/scripts  
+https://docs.npmjs.com/cli/run-script  
 
 
+## test  ??? c9.io OK ??? here is error ???
+## Error: Cannot find module ()
+
+```sh
+G:\wwwRoot\AngularJS\Angular2-udemy\ng2-app>node express-server.js
+module.js:471
+    throw err;
+    ^
+Error: Cannot find module 'G:\wwwRoot\AngularJS\Angular2-udemy\ng2-app\express-server.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:509:3
+
+G:\wwwRoot\AngularJS\Angular2-udemy\ng2-app>
+``` 
 
 
+# new server with correct path!
+
+> https://gist.github.com/xgqfrms-GitHub/9b7d30999594d750f9bf35b029b810c1
 
 
 

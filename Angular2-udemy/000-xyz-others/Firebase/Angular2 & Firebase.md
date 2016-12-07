@@ -79,6 +79,9 @@ custorm domain
 https://www.youtube.com/watch?v=U0izquVDOe8  
 
 
+# new server with correct path!
+
+> https://gist.github.com/xgqfrms-GitHub/9b7d30999594d750f9bf35b029b810c1
 
 
 
