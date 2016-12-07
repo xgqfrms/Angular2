@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  firebase = `Angular2 CLI & Hosting Angular 2 Applications On Firebase`;
 }

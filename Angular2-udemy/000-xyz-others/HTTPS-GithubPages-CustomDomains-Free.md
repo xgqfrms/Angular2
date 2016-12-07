@@ -49,6 +49,74 @@ window.location.host
 https://www.infoq.com/minibooks/emag-c-sharp-preview?utm_source=infoqWeeklyNewsletter&utm_medium=WeeklyNL_EditorialContenteMag&utm_campaign=12062016news
 
 
+https://certbot.eff.org/docs/using.html#manual
+
+https://ide.c9.io/xgqfrms/webgeeker
+
+
+
+
+# HTTPS
+
+http://webgeeker.xyz/
+
+https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/
+
+https://certbot.eff.org/docs/using.html#manual
+
+https://certbot.eff.org/
+
+
+## Apache ab for Ubuntu Linux , ab  
+
+http://www.imooc.com/qadetail/181465
+
+
+$ sudo apt-get install apache2-utils -Y
+$ sudo apt-get install apache2-utils
+
+Usage: ab [options] [http[s]://]hostname[:port]/path
+
+https://github.com/
+
+
+https://certbot.eff.org/#ubuntutrusty-apache 
+
+http://www.cnblogs.com/xgqfrms/p/5880270.html
+
+如何给 GitHub 添加 SSH key， 如何生成 SSH key 详细图文教程！
+
+http://www.cnblogs.com/anonymous-ufo/p/6143480.html
+
+Bash on windows10 error!
+
+http://images2015.cnblogs.com/blog/740516/201609/740516-20160921020415121-1890410785.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

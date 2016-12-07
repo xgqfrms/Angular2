@@ -75,6 +75,49 @@ https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MultiEditMode
 
 ``` 
 
+***********************************************************************
+
+# Angular2 CLI  
+
+## build production  
+```sh
+$ ng build --prop
+
+``` 
+
+## run server & open chrome  
+```sh
+$ ng server --open
+
+``` 
+
+## express static server for Angular2 App(dist)  
+
+https://gist.github.com/xgqfrms-GitHub/7175a873cd6eed5f6b6baa4b068d03d2  
+
+https://gist.github.com/xgqfrms-GitHub  
+
+https://gist.github.com/xgqfrms-GitHub/6e1554b5d73f4774dd338dd871611076
+
+https://console.firebase.google.com/project/angular2-88ac6/hosting  
+
+https://ide.c9.io/xgqfrms/angular2  
+
+## npm packages
+
+> process.env.PORT || 4200, process.env.IP || "127.0.0.1"
+
+```sh
+$ npm i -D express
+$ npm i -D async
+$ npm i -D socket.io
+
+``` 
+
+
+
+
+
 
 
 

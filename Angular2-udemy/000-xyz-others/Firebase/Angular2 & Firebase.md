@@ -41,11 +41,42 @@ $ ng build --prop
 
 ``` 
 
+## Firebase CLI 引用  
+https://firebase.google.com/docs/cli/  
+
+
+## firebase-tools 
+```sh
+$ sudo npm i -g firebase-tools 
+$ npm i -g firebase-tools
+
+# login ? browser auth
+$ firebase login
+$ NO 
+# browser auth (yes)
+$ firebase init
+# hosting & enter
+database.rules.json
+
+dist
+
+yes
+
+no
+
+$ firebase deploy
+
+URL
+
+custorm domain
+``` 
 
 
 
 
+## Angular 2 and Firebase - Introduction - Tutorial  
 
+https://www.youtube.com/watch?v=U0izquVDOe8  
 
 
 
