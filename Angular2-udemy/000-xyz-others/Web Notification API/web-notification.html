@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    <meta name="description" content="Angualr2 App">
+    <meta name="author" content="xgqfrms, https://xgqfrms.github.io">
+    <title>Web Notification API</title>
+    <!-- css -->
+    <style>
+        [aria-hidden="true"] {
+          display: none;
+          visibility: hidden;
+        }
+        /*
+            WebAIM: 
+            CSS in Action - Invisible Content Just for Screen Reader Users
+            http://webaim.org/techniques/css/invisiblecontent/
+        */
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Web Notification API</h1>
+    </div>
+    <div>
+        <mark>
+            <span class="js-currentVersion" aria-hidden="true">3.3.7</span>
+        </mark>
+    </div>
+    <!-- js -->
+    <script>
+        (() => {
+            // let is only available in {}
+            if ("Notification" in window) {
+                console.log("Web Notification API is supported by this browser!");
+                let permissionx = Notification.permission;
+                console.log(`permissionx = ${permissionx}`);
+                if (permissionx === "denied" || permissionx === "granted") {
+                    return ;
+                }
+                // Notification.requestPermission();
+                // Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}
+                Notification
+                    .requestPermission()
+                    .then(() => {
+                        let notification = new Notification("Hello, world!");
+                        alert(notification);
+                    });
+            }else{
+                console.log("Your old browser doesn't support Web Notification API!");
+            }
+        })();
+    </script>
+</body>
+</html>
