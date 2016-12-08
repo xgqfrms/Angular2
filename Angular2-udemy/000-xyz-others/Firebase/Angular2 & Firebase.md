@@ -73,6 +73,8 @@ URL
 custorm domain
 ``` 
 
+TXT
+CNAME
 
 
 

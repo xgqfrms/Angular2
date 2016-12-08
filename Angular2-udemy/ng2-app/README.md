@@ -52,19 +52,30 @@ ng2.webgeeker.xyz
 
 angular2.webgeeker.xyz  
 
-??? CNAME
+??? CNAME OK
 
 https://github.com/xgqfrms-GitHub/angular2/blob/master/README.md  
+https://github.com/ufo-github/angular.io/blob/gh-pages/CNAME  
+http://angular2.webgeeker.xyz  
 
 
 
 
+https://ng2-app-c94ed.firebaseapp.com/
+
+https://ng2.webgeeker.xyz
+
+## Firebase Authentication  
+
+https://firebase.google.com/docs/auth/  
+
+https://firebase.google.com/docs/auth/web/anonymous-auth  
+https://firebase.google.com/docs/auth/web/password-auth  
+https://firebase.google.com/docs/auth/web/github-auth  
+https://firebase.google.com/docs/auth/web/custom-auth
 
 
-
-
-
-
+https://github.com/firebase/FirebaseUI-Web  
 
 
 
