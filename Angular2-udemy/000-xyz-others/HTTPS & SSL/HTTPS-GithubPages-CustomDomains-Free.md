@@ -25,15 +25,41 @@ https://blog.cloudflare.com/introducing-universal-ssl/
 # Please visit your registrar's dashboard to change your nameservers to the following.
 
 Current Nameservers Change Nameservers to:  
+
+
 ns5.myhostadmin.net jerry.ns.cloudflare.com  
 ns6.myhostadmin.net mona.ns.cloudflare.com  
 
 https://www.cloudflare.com/a/overview/webgeeker.xyz  
 
+151.101.100.133
+
+https://www.cloudflare.com/a/dns/webgeeker.xyz  
+
+
+
+
+
+
 ns2.myhostadmin.net jerry.ns.cloudflare.com  
 ns1.myhostadmin.net mona.ns.cloudflare.com  
 
 https://www.cloudflare.com/a/overview/xgqfrms.xyz  
+
+151.101.100.133
+
+https://www.cloudflare.com/a/dns/xgqfrms.xyz
+
+
+
+
+## trello  
+
+https://trello.com/b/OZ6tpkpm/angular2
+
+
+
+
 
 
 ## chrome console: js
