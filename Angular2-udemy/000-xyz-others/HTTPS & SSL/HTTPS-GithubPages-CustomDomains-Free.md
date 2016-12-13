@@ -37,6 +37,24 @@ https://www.cloudflare.com/a/overview/webgeeker.xyz
 https://www.cloudflare.com/a/dns/webgeeker.xyz  
 
 
+jerry.ns.cloudflare.com
+mona.ns.cloudflare.com
+
+# MX-records
+
+https://support.cloudflare.com/hc/en-us/articles/218069617-How-do-I-add-or-edit-mail-or-MX-records-
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,6 +67,30 @@ https://www.cloudflare.com/a/overview/xgqfrms.xyz
 151.101.100.133
 
 https://www.cloudflare.com/a/dns/xgqfrms.xyz
+
+
+## 修改,DNS 服务器  我要 修改DNS 服务器
+
+我的域名：webgeeker.xyz
+
+DNS 修改为：
+
+DNS1:
+jerry.ns.cloudflare.com
+
+DNS2:
+mona.ns.cloudflare.com
+
+
+
+
+webgeeker.xyz  151.101.100.113
+
+webgeeker.xyz  104.27.177.55
+
+
+
+
 
 
 
