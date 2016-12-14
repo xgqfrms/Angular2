@@ -13,4 +13,13 @@ https://www.thoughtworks.com/continuous-integration
 
 
 ## Using front-end build tools  
+http://radify.io/blog/using-build-tools/  
+
+## 5 Workflow Tools for Front-End Developers  
+
+http://codecondo.com/5-workflow-tools-for-front-end-developers/   
+
+
+## A modern Frontend workflow  
+http://rbrtsmith.com/2015/08/a-modern-frontend-workflow  
 
