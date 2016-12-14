@@ -2,7 +2,7 @@
 
 http://browserify.org/  
 
-https://github.com/xgqfrms-GitHub/node-browserify/blob/master/Tutorials/readme.md  
+https://github.com/xgqfrms-GitHub/browserify/blob/master/Tutorials/readme.md  
 
 
 
@@ -120,6 +120,19 @@ module.exports = unique
 ```codes
 <script src="bundle.js"></script>
 ``` 
+
+
+
+
+> webpack  
+
+Star 21,712
+Fork 2,395
+
+> Browserify  
+
+Star 10,548
+Fork 949
 
 
 

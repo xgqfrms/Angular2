@@ -29,3 +29,21 @@ https://github.com/xgqfrms-GitHub/webpack/blob/master/README.md
 # Browserify  
 https://github.com/xgqfrms-GitHub/node-browserify/blob/master/Tutorials/readme.md  
 
+
+# angular2-webpack
+
+https://github.com/AngularClass/angular2-webpack-starter
+
+http://courses.angularclass.com/courses/enrolled/angular-2-fundamentals  
+
+
+
+> webpack  
+
+Star 21,712
+Fork 2,395
+
+> Browserify  
+
+Star 10,548
+Fork 949
