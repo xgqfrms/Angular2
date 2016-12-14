@@ -1,0 +1,50 @@
+[{
+    "id": 1,
+    "author": "Alice",
+    "language": "English",
+    "category": "IT",
+    "press": "Apress",
+    "published": 2016-03-17
+}, {
+    "id": 2,
+    "author": "Bell",
+    "language": "English",
+    "category": "IT",
+    "press": "Manning",
+    "published": 2016-03-18
+}, {
+    "id": 3,
+    "author": "Crystal",
+    "language": "English",
+    "category": "IT",
+    "press": "O'Reilly",
+    "published": 2016-03-19
+}, {
+    "id": 4,
+    "author": "Dell",
+    "language": "English",
+    "category": "IT",
+    "press": "Sams",
+    "published": 2016-03-20
+}, {
+    "id": 5,
+    "author": "Elite",
+    "language": "English",
+    "category": "IT",
+    "press": "SitePoint",
+    "published": 2016-03-21
+}, {
+    "id": 6,
+    "author": "Fendi",
+    "language": "English",
+    "category": "IT",
+    "press": "Packt",
+    "published": 2016-03-22
+}, {
+    "id": 7,
+    "author": "Gary",
+    "language": "English",
+    "category": "IT",
+    "press": "Microsoft",
+    "published": 2016-03-23
+}]

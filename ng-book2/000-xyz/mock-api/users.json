@@ -1,0 +1,36 @@
+[{
+    "id": 1,
+    "name": "Alice",
+    "country": "Australia",
+    "age": 17
+}, {
+    "id": 2,
+    "name": "Bell",
+    "country": "Brazil",
+    "age": 18
+}, {
+    "id": 3,
+    "name": "Crystal",
+    "country": "China",
+    "age": 19
+}, {
+    "id": 4,
+    "name": "Dell",
+    "country": "Denmark",
+    "age": 20
+}, {
+    "id": 5,
+    "name": "Elite",
+    "country": "Egypt",
+    "age": 21
+}, {
+    "id": 6,
+    "name": "Fendi",
+    "country": "Finland",
+    "age": 22
+}, {
+    "id": 7,
+    "name": "Gary",
+    "country": "Greece",
+    "age": 23
+}]
