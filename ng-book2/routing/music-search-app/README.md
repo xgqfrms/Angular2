@@ -3,9 +3,18 @@
 
 ## angular-cli  
 
+```sh
+$ ng server --open
+``` 
 
-https://github.com/xgqfrms-GitHub/angular-cli/tree/master/Tutorials
+## browser-sync
 
+```sh
+$ browser-sync start server "./dist/*.html"
+``` 
+
+
+https://github.com/xgqfrms-GitHub/angular-cli/tree/master/Tutorials  
 
 https://github.com/ufo-github/angular-cli  
 

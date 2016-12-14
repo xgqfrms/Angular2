@@ -122,6 +122,10 @@ module.exports = unique
 ``` 
 
 
+# webpack 2.x  
+
+https://webpack.js.org/concepts/  
+https://github.com/ufo-github/webpack.js.org/tree/develop/Tutorials/readme.md  
 
 
 > webpack  

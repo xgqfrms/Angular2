@@ -20,21 +20,26 @@ webpack 接受具有依赖性的模块，并生成表示这些模块的静态资
 
 
 
-
 ## webpack-how-to
 
 https://github.com/xgqfrms-GitHub/webpack/blob/master/README.md  
 
 
-# Browserify  
-https://github.com/xgqfrms-GitHub/node-browserify/blob/master/Tutorials/readme.md  
-
-
-# angular2-webpack
+## angular2-webpack
 
 https://github.com/AngularClass/angular2-webpack-starter
 
 http://courses.angularclass.com/courses/enrolled/angular-2-fundamentals  
+
+
+## Learn Webpack and React  
+http://survivejs.com/  
+
+
+
+
+# Browserify  
+https://github.com/xgqfrms-GitHub/node-browserify/blob/master/Tutorials/readme.md  
 
 
 
