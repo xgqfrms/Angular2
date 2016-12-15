@@ -1,0 +1,17 @@
+# exe path
+
+C:\Users\xray\AppData\Local\GitBook_Editor\app-6.3.7
+
+
+# book files path
+
+
+C:\Users\xray\GitBook
+
+
+£¿£¿£¿
+
+disqus ¼¯³É gitbook ???? 
+
+https://plugins.gitbook.com/plugin/disqus
+
