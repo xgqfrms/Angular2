@@ -1,0 +1,9 @@
+ #box:hover {
+    background: blue;
+    &:before {
+        border-bottom-color: blue;
+    }
+    &:after {
+        border-top-color: blue;
+    }
+} 

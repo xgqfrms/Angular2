@@ -1,0 +1,8 @@
+#box:hover {
+  background: blue; }
+  #box:hover:before {
+    border-bottom-color: blue; }
+  #box:hover:after {
+    border-top-color: blue; }
+
+/*# sourceMappingURL=css.css.map */

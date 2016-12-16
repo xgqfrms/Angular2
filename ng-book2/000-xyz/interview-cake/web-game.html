@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var -->
+</head>
+<body>
+    <button id="btn-0">Button 1!</button>
+    <button id="btn-1">Button 2!</button>
+    <button id="btn-2">Button 3!</button>
+    <div>
+        <img src="svg.svg" alt="svg">
+    </div>
+
+    <script type="text/javascript">
+        (function (){
+            console.log(` function = ${typeof(Symbol())}`);
+        }());
+
+        (function (){
+            console.log(` function = ${typeof(Symbol)}`);
+        })();
+
+        for (let btn = 0; btn < prizes.length; btn++) {
+            // for each of our buttons, when the user clicks it...
+            console.log(`btn = ${btn}`);//1, 2, 3
+            document.getElementById('btn-' + btn).onclick = function() {
+                // tell her what she's won!
+                // alert(prizes[btn]);
+                console.log(`btn = ${btn}`);//3
+                console.log(`prizes[btn] = ${prizes[btn]}`);//undefined
+            };
+        };
+        
+        for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+            // for each of our buttons, when the user clicks it...
+            console.log(`btnNum = ${btnNum}`);//1, 2, 3
+            document.getElementById('btn-' + btnNum).onclick = function() {
+                // tell her what she's won!
+                // alert(prizes[btnNum]);
+                console.log(`btnNum = ${btnNum}`);//3
+                console.log(`prizes[btnNum] = ${prizes[btnNum]}`);//undefined
+            };
+        };
+
+        console.log(`btnNum = ${btnNum}`);//var === 3 (variable hoisting/var hoisting)
+        console.log(`btnNum = ${btnNum}`);//let === Uncaught ReferenceError: btnNum is not defined
+    </script>
+</body>
+</html>
