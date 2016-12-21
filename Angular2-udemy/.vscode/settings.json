@@ -6,7 +6,8 @@
     "editor.tabCompletion": true,
     "editor.mouseWheelZoom": true,
     "editor.formatOnSave": false,
-    "html.format.wrapLineLength": 100,
+    "html.format.wrapLineLength": 80,
+    "editor.wrappingColumn": 100,
     "html.format.enable": false,
     "html.format.extraLiners": "/body",
     "workbench.statusBar.visible": true
