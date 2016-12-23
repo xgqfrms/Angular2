@@ -109,7 +109,7 @@ $ ng g pipe test.pipe.ts
 
 $ ng version
 # 别名:
-$ ng v
+$ ng -v
 $ ng ­v
 
 ``` 
@@ -119,6 +119,7 @@ $ ng ­v
 https://github.com/angular/angular-cli/issues/3376
 
 > why not show the localhost://4200 in the terminal? 
+
 
 
 ```sh
@@ -132,6 +133,13 @@ https://xgqfrms.github.io/vue/App-Native/index.html
 
 
 http://www.typescriptlang.org/play/
+
+## Sublime Text Keymap
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings  
+
+https://code.visualstudio.com/docs/customization/keybindings  
+
 
 ## .vscode (setting.json)
 
@@ -210,4 +218,111 @@ This repo can be cloned in a new C9 workspace (other than the one set up in the 
 
 
 https://www.youtube.com/watch?v=mvzNHxxjC2w  
+
+
+## bootstrapv3
+
+https://www.youtube.com/watch?v=I4TD-LXq2sY&feature=youtu.be 
+
+(21:29 / 33:37)
+
+$ npm i -S bootstrap 
+
+## Import 
+
+> ng-cli.json  (src relative path ../ & ./)  
+
+```codes 
+"styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      ],
+``` 
+
+
+## material design???
+
+https://material.angular.io/guide/getting-started  
+https://material2-app.firebaseapp.com/  
+
+https://github.com/angular/material2/issues/2386  
+
+
+$ npm i -S @angular/material
+
+## Import the Angular Material NgModule
+
+> src/app/app.module.ts  
+
+```codes
+import { MaterialModule } from '@angular/material';
+// other imports 
+@NgModule({
+  imports: [MaterialModule.forRoot()],
+  ...
+})
+export class PizzaPartyAppModule { }
+``` 
+
+
+```icons 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+``` 
+
+
+## 
+http://hammerjs.github.io/  
+https://www.npmjs.com/package/hammerjs  
+
+
+> md-slide-toggle & md-slider:  
+
+## The slide-toggle and slider components have a dependency on HammerJS.
+
+Add HammerJS to your application via npm, a CDN , or served directly from your app.
+
+If you want to include HammerJS from npm, you can install it:
+
+$ npm install --save hammerjs 
+$ npm install --save-dev @types/hammerjs
+
+$ npm i -S hammerjs 
+$ npm i -D @types/hammerjs
+
+## Import HammerJS on your app's module.
+
+> src/app/app.module.ts  
+
+```codes 
+import 'hammerjs';
+
+> Finally, you need to add hammerjs to the types section of your tsconfig.json file:
+
+{
+  "compilerOptions": {
+    "types": [
+      "hammerjs"
+    ]
+  }
+}
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

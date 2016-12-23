@@ -1,36 +1,38 @@
-<div>
+<div class="container">
     <h1>Book Form Validation</h1>
     <form>
         <div class="form-group">
             <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" required name="title" [(ngModel)]="model.title" minlength="7" maxlength="12" #title="ngModel">
+            <input type="text" class="form-control" id="title" required name="title" [(ngModel)]="xmodule.title" minlength="7" maxlength="12" #title="ngModel">
         </div>
         <!--check-->
-        <div *ngIf="title.error && (title.dirty || title.touched)" class="alert alert-danger">
-            <div [hidden]="!title.error.required">
+        <div *ngIf="title.errors && (title.dirty || title.touched)" class="alert alert-danger">
+            <div [hidden]="!title.errors.required">
                 book title is required!
             </div>
-            <div [hidden]="!title.error.minlength">
+            <div [hidden]="!title.errors.minlength">
                 book title must be more than 6 characters long!
             </div>
-            <div [hidden]="!title.error. maxlength">
+            <div [hidden]="!title.errors. maxlength">
                 book title must beless than 13 characters long!
             </div>
         </div>
         <div class=" form-group">
             <label for="author">Author</label>
-            <input type="text" class="form-control" id="author" required name="author " [(ngModel)]="model.author" #author="ngModel">
+            <input type="text" class="form-control" id="author" required name="author" [(ngModel)]="xmodule.author" #author="ngModel">
         </div>
         <div class="form-group ">
             <label for="url">Url</label>
-            <input type="url" class="form-control" id="url" required name="url" [(ngModel)]="model.url" #url="ngModel">
+            <input type="url" class="form-control" id="url" required name="url" [(ngModel)]="xmodule.url" #url="ngModel">
             <!-- url pattern=" https?://.+ " -->
         </div>
         <button type="submit " class="btn btn-default ">Submit</button>
     </form>
     <hr>
     <div>
-        <h2>Show Model infos:</h2>
+        <h2>Show xmodule infos:</h2>
         {{currentBook}}
+        <h2> pipe ???</h2>
+        {{xmodule | json}}
     </div>
 </div>

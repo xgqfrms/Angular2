@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
 
 @NgModule({
     declarations: [
@@ -14,9 +17,11 @@ import { FormValidationComponent } from './form-validation/form-validation.compo
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
+        HttpModule,
+        MaterialModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class PizzaPartyAppModule { }
