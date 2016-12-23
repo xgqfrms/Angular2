@@ -13,6 +13,55 @@ $ cd Angular2-App
 $ ng server
 ``` 
 
+## angular 2 version  
+(v 2.2.1 -> v 2.4.1)  
+2016-11-17 ->  2016-12-22  
+
+??? ( v 4.0.0-beta.1)
+
+https://angular.io  
+https://github.com/angular/angular/tags  
+
+```package.json
+"dependencies": {
+    "@angular/common": "2.2.1",
+    "@angular/compiler": "2.2.1",
+    "@angular/core": "2.2.1",
+    "@angular/forms": "2.2.1",
+    "@angular/http": "2.2.1",
+    "@angular/platform-browser": "2.2.1",
+    "@angular/platform-browser-dynamic": "2.2.1",
+    "@angular/router": "3.2.1",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.6.23"
+}
+``` 
+
+
+
+
+
+## ng -v (v1.0.0-beta.21 -> v1.0.0-beta.24)  
+https://github.com/angular/angular-cli/tags  
+
+```sh
+$ ng version
+$ ng --version
+$ ng -v
+$ ng v
+$ npm i -g angular-cli 
+``` 
+
+## tsc -v (2.0.10 -> 2.1.4)  
+https://github.com/Microsoft/TypeScript/tags  
+
+```sh
+$ tsc -v
+$ npm i -g typescript 
+``` 
+
 ******************************************************************************************
 
 ## update CLI 1.0.0.beta22 
@@ -110,7 +159,18 @@ https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#typescript
 https://github.com/Microsoft/TypeScript/releases/tag/v2.0.3
 
 
-## tsc -v (2.0.10)
+## tsc -v (2.0.10 -> 2.1.4)  
+https://github.com/Microsoft/TypeScript/tags  
+
+```sh
+$ tsc -v
+
+$ npm install -g typescript 
+
+$ npm i -g typescript 
+``` 
+
+
 
 http://www.typescriptlang.org/docs/tutorial.html  
 

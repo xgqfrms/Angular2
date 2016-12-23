@@ -10,5 +10,6 @@
     "editor.wrappingColumn": 100,
     "html.format.enable": false,
     "html.format.extraLiners": "/body",
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "editor.renderWhitespace": "all"
 }
