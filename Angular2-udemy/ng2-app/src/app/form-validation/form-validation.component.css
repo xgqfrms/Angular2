@@ -1,0 +1,53 @@
+/* 
+.mds-c svg{
+    background: red;
+    color: #000;
+}
+
+.mdp-c svg{
+    background: green;
+    color: #000;
+}
+
+dynamic created style, can not be modified!
+using ng bulid, stop the change!
+browser-sync test!
+??? you don't know the class name still ???
+
+bugs!
+
+*/
+
+[_nghost-puy-17] svg[_ngcontent-puy-17] {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    background: red;
+}
+[_nghost-sjr-17] svg[_ngcontent-sjr-17] {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    background: green;
+}
+
+[_nghost-fdp-17] svg[_ngcontent-fdp-17] {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    background: blue;
+}
+[_nghost-yue-17] svg[_ngcontent-yue-17] {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    background: purple;
+}

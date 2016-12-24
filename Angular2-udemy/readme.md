@@ -2,6 +2,26 @@
 
 https://www.udemy.com/ultimate-angular-2/
 
+## npm CLI 
+
+https://docs.npmjs.com/cli/install  
+
+```sh
+npm install (with no args, in package dir)
+npm install [<@scope>/]<name>
+npm install [<@scope>/]<name>@<tag>
+npm install [<@scope>/]<name>@<version>
+npm install [<@scope>/]<name>@<version range>
+npm install <tarball file>
+npm install <tarball url>
+npm install <folder>
+
+alias: npm i
+common options: [-S|--save|-D|--save-dev|-O|--save-optional] [-E|--save-exact] [--dry-run]
+``` 
+
+
+
 
 ## AOT 
 
