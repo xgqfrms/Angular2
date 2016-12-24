@@ -9,7 +9,8 @@ import { Book } from '../book.module';
 })
 export class FormValidationComponent implements OnInit {
 
-  xmodule = new Book(1, "abc","xgqfrms","https://www.xgqfrms.xyz");
+  xmodule = new Book(1, "","","");
+  //xmodule = new Book(1, "abc","xgqfrms","https://www.xgqfrms.xyz");
   constructor() { }
 
   ngOnInit() {

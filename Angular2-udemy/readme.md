@@ -3,6 +3,27 @@
 https://www.udemy.com/ultimate-angular-2/
 
 
+## AOT 
+
+
+$ ng build --prod --aot
+
+https://www.youtube.com/watch?v=nxMCBKpRC60  
+
+
+## Material Design Angular 2  
+
+https://www.youtube.com/watch?v=sRSnftoUpxg  
+
+
+
+
+## browser-sync  
+
+```sh
+$ browser-sync start --server --files "./*.*"
+
+``` 
 ******************************************************************************************
 # install & create & run ng2app
 
@@ -258,10 +279,9 @@ $ npm i -S @angular/material
 import { MaterialModule } from '@angular/material';
 // other imports 
 @NgModule({
-  imports: [MaterialModule.forRoot()],
+  imports: [MaterialModule.forRoot(), ...],
   ...
 })
-export class PizzaPartyAppModule { }
 ``` 
 
 

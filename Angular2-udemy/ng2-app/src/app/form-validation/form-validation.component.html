@@ -3,7 +3,7 @@
     <form>
         <div class="form-group">
             <label for="title">Title</label>
-            <input type="text" class="form-control" id="title" required name="title" [(ngModel)]="xmodule.title" minlength="7" maxlength="12" #title="ngModel">
+            <input type="text" class="form-control" id="title" required name="title" [(ngModel)]="xmodule.title" minlength="6" maxlength="23" #title="ngModel">
         </div>
         <!--check-->
         <div *ngIf="title.errors && (title.dirty || title.touched)" class="alert alert-danger">
@@ -13,8 +13,8 @@
             <div [hidden]="!title.errors.minlength">
                 book title must be more than 6 characters long!
             </div>
-            <div [hidden]="!title.errors. maxlength">
-                book title must beless than 13 characters long!
+            <div [hidden]="!title.errors.maxlength">
+                book title must beless than 23 characters long!
             </div>
         </div>
         <div class=" form-group">
@@ -26,7 +26,7 @@
             <input type="url" class="form-control" id="url" required name="url" [(ngModel)]="xmodule.url" #url="ngModel">
             <!-- url pattern=" https?://.+ " -->
         </div>
-        <button type="submit " class="btn btn-default ">Submit</button>
+        <button type="submit " class="btn btn-default">Submit</button>
     </form>
     <hr>
     <div>
