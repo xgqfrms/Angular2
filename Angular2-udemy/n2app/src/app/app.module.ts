@@ -10,6 +10,7 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,7 @@ import { FormValidationComponent } from './form-validation/form-validation.compo
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
