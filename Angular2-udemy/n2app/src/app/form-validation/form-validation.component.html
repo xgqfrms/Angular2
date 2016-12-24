@@ -1,0 +1,53 @@
+<md-card>
+    <div>
+        <h1>Book Form Validation</h1>
+        <md-icon>home</md-icon>
+        <md-progress-bar mode="indeterminate"></md-progress-bar>
+        <md-progress-bar mode="determinate"></md-progress-bar>
+        <md-progress-bar mode="buffer"></md-progress-bar>
+        <md-progress-bar mode="query"></md-progress-bar>
+        <md-progress-spinner mode="indeterminate" class="mdp-c"></md-progress-spinner>
+        <md-progress-spinner mode="determinate" class="mdp-c"></md-progress-spinner>
+        <md-spinner mode="indeterminate" class="mds-c"></md-spinner>
+        <md-spinner mode="determinate" class="mds-c"></md-spinner>
+        <md-chip-list>
+            <md-chip>One fish</md-chip>
+            <md-chip>Two fish</md-chip>
+            <md-chip color="primary" selected="true">Primary fish</md-chip>
+            <md-chip color="accent" selected="true">Accent fish</md-chip>
+        </md-chip-list>
+        <form>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" required name="title" [(ngModel)]="xmodule.title" minlength="6" maxlength="23" #title="ngModel">
+            </div>
+            <!--check-->
+            <div *ngIf="title.errors && (title.dirty || title.touched)" class="alert alert-danger">
+                <div [hidden]="!title.errors.required">
+                    book title is required!
+                </div>
+                <div [hidden]="!title.errors.minlength">
+                    book title must be more than 6 characters long!
+                </div>
+                <div [hidden]="!title.errors.maxlength">
+                    book title must beless than 23 characters long!
+                </div>
+            </div>
+            <div class=" form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" required name="author" [(ngModel)]="xmodule.author" #author="ngModel">
+            </div>
+            <div class="form-group ">
+                <label for="url">Url</label>
+                <input type="url" class="form-control" id="url" required name="url" [(ngModel)]="xmodule.url" #url="ngModel">
+                <!-- url pattern=" https?://.+ " -->
+            </div>
+            <button type="submit" md-button>Submit</button>
+        </form>
+        <hr>
+        <div>
+            <h2>Show xmodule infos:</h2> {{currentBook}}
+            <h2> pipe ???</h2> {{xmodule | json}}
+        </div>
+    </div>
+</md-card>

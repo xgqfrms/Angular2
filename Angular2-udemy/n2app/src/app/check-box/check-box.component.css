@@ -1,0 +1,22 @@
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  border: 1px solid red;
+  background: #fff;
+  box-shadow: 0 7px 12px 10px rgba(0,255,0,0.7), 0 7px 10px 12px rgba(0,255,0,0.3); 
+}
+
+.example-margin {
+  margin: 0 10px;
+}
