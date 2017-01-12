@@ -89,3 +89,21 @@ https://www.youtube.com/watch?v=U0izquVDOe8
 
 
 
+## 设置 Hosting (1 安装, 2 部署)  
+
+$ npm install -g firebase-tools
+
+$ firebase login
+
+$ firebase init
+
+$ firebase deploy
+
+
+
+https://www.youtube.com/watch?v=82PRCg4QfpE  
+
+## Hosting Angular 2 Applications On Firebase  
+
+
+

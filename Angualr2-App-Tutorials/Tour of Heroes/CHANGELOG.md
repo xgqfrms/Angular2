@@ -13,3 +13,16 @@
 * Protractor 4
 * Move from `typings` to `@types`. See `tsconfig.json` changes.
 * Angular v2.1.1
+
+
+
+
+
+
+ng2-heroes.xgqfrms.xyz
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim  
+
+
+
+
