@@ -5,6 +5,8 @@
     "typescript.check.workspaceVersion": false,
     "editor.tabCompletion": true,
     "editor.mouseWheelZoom": true,
+    "editor.lineHeight": 24,
+    "editor.fontSize": 16,
     "editor.formatOnSave": false,
     "html.format.wrapLineLength": 80,
     "editor.wrappingColumn": 80,
