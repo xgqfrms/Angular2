@@ -1,6 +1,11 @@
-# AngularJS
-AngularJS
-[https://xgqfrms.github.io/AngularJS/](https://xgqfrms.github.io/AngularJS/)
+# Angular2  
+
+https://angular2.xgqfrms.xyz/
+
+http://angular2.xgqfrms.xyz/
+
+Angular2
+[https://xgqfrms.github.io/Angular2/](https://xgqfrms.github.io/Angular2/)
 ***
 ## Get started with **gulp** videos
 ### [Part 1: Workflow overview and jade templates](https://www.youtube.com/watch?v=DkRoa2LooNM&list=PLRk95HPmOM6PN-G1xyKj9q6ap_dc9Yckm&index=1)
