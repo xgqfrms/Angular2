@@ -34,10 +34,55 @@ https://www.youtube.com/watch?v=P6Ea5Pknjco
 
 
 
+## Material Design With Angular 2 Tutorial
+
+https://www.youtube.com/watch?v=sRSnftoUpxg
+
+
+Adding Material2 to Angular app
+
+https://www.youtube.com/watch?v=_TfahtINWUE
+
+
+## Create A REST API With JSON Server
+
+https://www.youtube.com/watch?v=x3NAo8zqdmo
+
+
+
+## Getting Started With Axios
+
+(Accessing REST Web Services / HTTP APIs in JavaScript)
+
+https://www.youtube.com/watch?v=1vbpBDWu1AQ
+
+https://github.com/mzabriskie/axios
+
+
+
+
+
 
 https://www.sitepoint.com/understanding-component-architecture-angular/
 
 https://www.sitepoint.com/angular-2-tutorial/
+
+
+
+https://www.sitepoint.com/angular-2-tutorial/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
