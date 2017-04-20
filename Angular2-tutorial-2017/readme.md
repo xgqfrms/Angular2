@@ -117,6 +117,58 @@ https://egghead.io/lessons/javascript-create-vertical-horizontal-layouts-with-st
 
 
 
+Using Material Design with Vue.js 2
+
+https://www.youtube.com/watch?v=1j8xTOmR8pw
+
+2017] Vue.js in less than 30 minutes for beginners - Tutorial - 2.0
+
+https://www.youtube.com/watch?v=VPUdtEf3oXI
+
+
+
+
+
+
+
+Webpack 2 - A full tutorial
+
+https://www.youtube.com/watch?v=eWmkBNBTbMM
+
+https://github.com/emiloberg/webpack-tutorial
+
+
+https://www.youtube.com/playlist?list=PLkEZWD8wbltnRp6nRR8kv97RbpcUdNawY
+
+Webpack 2
+
+
+https://www.youtube.com/watch?v=m7V0OackwxY
+
+
+
+
+
+
+https://www.youtube.com/channel/UC7O6CntQoAI-wYyJxYiqNUg
+
+https://ihatetomatoes.net/the-best-of/
+
+
+https://github.com/Ihatetomatoes/webpack-101-starter/blob/master/webpack.config.js
+
+
+https://www.youtube.com/playlist?list=PLkEZWD8wbltnRp6nRR8kv97RbpcUdNawY
+
+https://ihatetomatoes.net/react-cheat-sheet-pdf/
+
+
+
+
+
+
+
+
 
 
 
