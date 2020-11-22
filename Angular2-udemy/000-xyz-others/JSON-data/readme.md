@@ -21,6 +21,12 @@ https://jsonpath.curiousconcept.com/
 #### JSONSelect Expression Tester  
 https://jsonselect.curiousconcept.com/  
 
+#### JSON Schema Validator and Generator
+https://extendsclass.com/json-schema-validator.html  
+
+#### Random JSON Generator
+https://extendsclass.com/json-generator.html  
+
 
 
 01 Example Google Maps JSON File
